@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>39BC7982-4B5E-4CAE-8AB2-ED1DFFDF0820</string>
+	<string>E00815C3-5A13-486B-9BB0-785D6084BDAD</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TestPageView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3F01F683-5773-4BBB-B20F-95269A584D7A</key>
-		<string>ssh://bitbucket.org/altstars/altstar_app.git</string>
+		<key>82FDBC75-294C-4446-BDA3-A975A8170EDE</key>
+		<string>ssh://bitbucket.org/altstars/altstars_app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TestPageView/TestPageView.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3F01F683-5773-4BBB-B20F-95269A584D7A</key>
+		<key>82FDBC75-294C-4446-BDA3-A975A8170EDE</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://bitbucket.org/altstars/altstar_app.git</string>
+	<string>ssh://bitbucket.org/altstars/altstars_app.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3F01F683-5773-4BBB-B20F-95269A584D7A</string>
+	<string>82FDBC75-294C-4446-BDA3-A975A8170EDE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3F01F683-5773-4BBB-B20F-95269A584D7A</string>
+			<string>82FDBC75-294C-4446-BDA3-A975A8170EDE</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Altstars</string>
+			<string>altstars_app</string>
 		</dict>
 	</array>
 </dict>

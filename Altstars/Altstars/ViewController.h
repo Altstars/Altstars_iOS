@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  Artstars
+//  Altstars
 //
-//  Created by Kouki Saito on 2014/05/12.
+//  Created by Kouki on 2014/05/15.
 //  Copyright (c) 2014年 Kouki. All rights reserved.
 //
 

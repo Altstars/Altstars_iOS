@@ -1,18 +1,18 @@
 //
-//  ArtstarsTests.m
-//  ArtstarsTests
+//  AltstarsTests.m
+//  AltstarsTests
 //
-//  Created by Kouki Saito on 2014/05/12.
+//  Created by Kouki on 2014/05/15.
 //  Copyright (c) 2014年 Kouki. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ArtstarsTests : XCTestCase
+@interface AltstarsTests : XCTestCase
 
 @end
 
-@implementation ArtstarsTests
+@implementation AltstarsTests
 
 - (void)setUp
 {
