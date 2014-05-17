@@ -10,4 +10,6 @@
 
 @interface ContentDataViewController : UIViewController
 
+@property (strong, nonatomic) id dataObject;
+
 @end
