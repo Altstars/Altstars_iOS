@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E11E2C61927497C00508731 /* article_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E11E2C51927497C00508731 /* article_image.png */; };
 		1E11E2C919274AC700508731 /* ContentDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2C819274AC700508731 /* ContentDataViewController.m */; };
+		1E11E2D219274C2600508731 /* ContentRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2D119274C2600508731 /* ContentRootViewController.m */; };
 		1E7A17A219244B490097541D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A119244B490097541D /* Foundation.framework */; };
 		1E7A17A419244B490097541D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A319244B490097541D /* CoreGraphics.framework */; };
 		1E7A17A619244B490097541D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A519244B490097541D /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 		1E11E2C51927497C00508731 /* article_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = article_image.png; sourceTree = "<group>"; };
 		1E11E2C719274AC700508731 /* ContentDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentDataViewController.h; sourceTree = "<group>"; };
 		1E11E2C819274AC700508731 /* ContentDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentDataViewController.m; sourceTree = "<group>"; };
+		1E11E2D019274C2600508731 /* ContentRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentRootViewController.h; sourceTree = "<group>"; };
+		1E11E2D119274C2600508731 /* ContentRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentRootViewController.m; sourceTree = "<group>"; };
 		1E7A179E19244B490097541D /* Altstars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Altstars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7A17A119244B490097541D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E7A17A319244B490097541D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +126,8 @@
 				1E7A17B019244B490097541D /* AppDelegate.h */,
 				1E7A17B119244B490097541D /* AppDelegate.m */,
 				1E7A17B319244B490097541D /* Main.storyboard */,
+				1E11E2D019274C2600508731 /* ContentRootViewController.h */,
+				1E11E2D119274C2600508731 /* ContentRootViewController.m */,
 				1E11E2C719274AC700508731 /* ContentDataViewController.h */,
 				1E11E2C819274AC700508731 /* ContentDataViewController.m */,
 				1E7A17B919244B490097541D /* Images.xcassets */,
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E11E2D219274C2600508731 /* ContentRootViewController.m in Sources */,
 				1E7A17B219244B490097541D /* AppDelegate.m in Sources */,
 				1E11E2C919274AC700508731 /* ContentDataViewController.m in Sources */,
 				1E7A17AE19244B490097541D /* main.m in Sources */,
