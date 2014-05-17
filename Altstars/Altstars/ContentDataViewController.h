@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RelatedContentsView.h"
+
 @interface ContentDataViewController : UIViewController
 
 @property (strong, nonatomic) id dataObject;
