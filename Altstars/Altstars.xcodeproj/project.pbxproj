@@ -12,6 +12,7 @@
 		1E11E2D219274C2600508731 /* ContentRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2D119274C2600508731 /* ContentRootViewController.m */; };
 		1E11E2D519275EF900508731 /* ContentModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2D419275EF900508731 /* ContentModelController.m */; };
 		1E11E2DB19276A3400508731 /* RelatedContentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2DA19276A3400508731 /* RelatedContentsView.m */; };
+		1E11E2E21928EF3600508731 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2E11928EF3600508731 /* ContentViewController.m */; };
 		1E7A17A219244B490097541D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A119244B490097541D /* Foundation.framework */; };
 		1E7A17A419244B490097541D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A319244B490097541D /* CoreGraphics.framework */; };
 		1E7A17A619244B490097541D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A519244B490097541D /* UIKit.framework */; };
@@ -49,6 +50,8 @@
 		1E11E2D419275EF900508731 /* ContentModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentModelController.m; sourceTree = "<group>"; };
 		1E11E2D919276A3400508731 /* RelatedContentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedContentsView.h; sourceTree = "<group>"; };
 		1E11E2DA19276A3400508731 /* RelatedContentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedContentsView.m; sourceTree = "<group>"; };
+		1E11E2E01928EF3600508731 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		1E11E2E11928EF3600508731 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		1E7A179E19244B490097541D /* Altstars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Altstars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7A17A119244B490097541D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E7A17A319244B490097541D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,8 @@
 		1E11E2DC19276A5600508731 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				1E11E2E01928EF3600508731 /* ContentViewController.h */,
+				1E11E2E11928EF3600508731 /* ContentViewController.m */,
 				1E11E2D019274C2600508731 /* ContentRootViewController.h */,
 				1E11E2D119274C2600508731 /* ContentRootViewController.m */,
 				1E11E2D319275EF900508731 /* ContentModelController.h */,
@@ -318,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E11E2D219274C2600508731 /* ContentRootViewController.m in Sources */,
+				1E11E2E21928EF3600508731 /* ContentViewController.m in Sources */,
 				1E7A17B219244B490097541D /* AppDelegate.m in Sources */,
 				1E11E2C919274AC700508731 /* ContentDataViewController.m in Sources */,
 				1E11E2D519275EF900508731 /* ContentModelController.m in Sources */,

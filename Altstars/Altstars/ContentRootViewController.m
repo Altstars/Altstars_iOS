@@ -43,6 +43,7 @@
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     self.pageViewController.dataSource = self.modelController;
+    
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
     

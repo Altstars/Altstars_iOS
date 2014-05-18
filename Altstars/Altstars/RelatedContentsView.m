@@ -14,7 +14,6 @@
 
     self = [super initWithCoder:coder];
     if(self) {
-        NSLog(@"OK");
         [self setDataSource:self];
         [self setDelegate:self];
     }
