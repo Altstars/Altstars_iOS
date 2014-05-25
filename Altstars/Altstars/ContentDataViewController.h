@@ -14,4 +14,9 @@
 
 @property (strong, nonatomic) id dataObject;
 
+@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
+@property (weak, nonatomic) IBOutlet UILabel *mainTitle;
+
+@property (weak, nonatomic) IBOutlet RelatedContentsView *relatedContentsView;
+
 @end

@@ -11,6 +11,8 @@
 #import "ContentModelController.h"
 #import "ContentDataViewController.h"
 
+#import <AFNetworking.h>
+
 @interface ContentRootViewController ()
 @property (strong, nonatomic) ContentModelController *modelController;
 @end
@@ -35,25 +37,46 @@
     
     self.modelController = [[ContentModelController alloc] init];
     
-    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.pageViewController.delegate = self;
     
-    ContentDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"http://altstars.koukilab.com/magazine/latest"
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             // 通信に成功した場合の処理
+             
+             NSLog(@"responseObject: %@", responseObject[@"contents"]);
+             self.modelController.pageData = [responseObject[@"contents"] copy];
+             
+             self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+             self.pageViewController.delegate = self;
+             
+             ContentDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
+             NSArray *viewControllers = @[startingViewController];
+             [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+             
+             self.pageViewController.dataSource = self.modelController;
+             
+             [self addChildViewController:self.pageViewController];
+             [self.view addSubview:self.pageViewController.view];
+             
+             CGRect pageViewRect = self.view.bounds;
+             self.pageViewController.view.frame = pageViewRect;
+             
+             [self.pageViewController didMoveToParentViewController:self];
+             
+             self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+             
+             
+
+             
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             // エラーの場合はエラーの内容をコンソールに出力する
+             NSLog(@"Error: %@", error);
+         }];
+
     
-    self.pageViewController.dataSource = self.modelController;
-    
-    [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
-    
-    CGRect pageViewRect = self.view.bounds;
-    self.pageViewController.view.frame = pageViewRect;
-    
-    [self.pageViewController didMoveToParentViewController:self];
-    
-    self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
-    
+
 }
 
 - (void)didReceiveMemoryWarning

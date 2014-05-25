@@ -11,7 +11,6 @@
 #import "ContentDataViewController.h"
 
 @interface ContentModelController()
-@property (readonly, strong, nonatomic) NSArray *pageData;
 @end
 
 @implementation ContentModelController

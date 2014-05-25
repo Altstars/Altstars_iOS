@@ -13,6 +13,8 @@
 
 @interface ContentModelController : NSObject <UIPageViewControllerDataSource>
 
+@property (strong, nonatomic) NSArray *pageData;
+
 - (ContentDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(ContentDataViewController *)viewController;
 

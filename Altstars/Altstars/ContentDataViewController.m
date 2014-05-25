@@ -30,6 +30,19 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.mainTitle.text = self.dataObject[@"title"];
+    
+    UIImageView * imageView = [[UIImageView alloc]init];
+    NSURL *url = [NSURL URLWithString:@"http://imageurl.com/image.jpg"];
+    NSData * data = [NSData dataWithContentsOfURL:url];
+    self.mainImage.image = [[UIImage alloc] initWithData:data cache:NO];
+
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
