@@ -36,10 +36,10 @@
     
     self.mainTitle.text = self.dataObject[@"title"];
     
-    UIImageView * imageView = [[UIImageView alloc]init];
-    NSURL *url = [NSURL URLWithString:@"http://imageurl.com/image.jpg"];
-    NSData * data = [NSData dataWithContentsOfURL:url];
-    self.mainImage.image = [[UIImage alloc] initWithData:data cache:NO];
+    UIImageView *imageView = [[UIImageView alloc]init];
+    NSURL *url = [NSURL URLWithString:self.dataObject[@"image"]];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    self.mainImage.image = [[UIImage alloc] initWithData:data];
 
 }
 
