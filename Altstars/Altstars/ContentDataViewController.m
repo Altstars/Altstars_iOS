@@ -23,11 +23,28 @@
     return self;
 }
 
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    switch (touch.view.tag) {
+        case 1:
+            NSLog(@"Move to web view");
+            break;
+    }
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    WebViewController *webViewController = [storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
+    webViewController.url = self.dataObject[@"url"];
+    
+    UINavigationController *navigationController = self.parentViewController.parentViewController.parentViewController.navigationController;
+    [navigationController pushViewController:webViewController animated:YES];
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -26,6 +26,7 @@
 		1E7A17C319244B490097541D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A519244B490097541D /* UIKit.framework */; };
 		1E7A17CB19244B490097541D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A17C919244B490097541D /* InfoPlist.strings */; };
 		1E7A17CD19244B490097541D /* AltstarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A17CC19244B490097541D /* AltstarsTests.m */; };
+		1E9D6F2B1931EBDC007055BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2A1931EBDC007055BF /* WebViewController.m */; };
 		5C4E86F28AD64426B9E2D23A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 142803E369434BD7BB582C78 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		1E7A17C819244B490097541D /* AltstarsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AltstarsTests-Info.plist"; sourceTree = "<group>"; };
 		1E7A17CA19244B490097541D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E7A17CC19244B490097541D /* AltstarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AltstarsTests.m; sourceTree = "<group>"; };
+		1E9D6F291931EBDC007055BF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1E9D6F2A1931EBDC007055BF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		60B699C47BAD4A37BCF24B27 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +111,8 @@
 				1E11E2D419275EF900508731 /* ContentModelController.m */,
 				1E11E2C719274AC700508731 /* ContentDataViewController.h */,
 				1E11E2C819274AC700508731 /* ContentDataViewController.m */,
+				1E9D6F291931EBDC007055BF /* WebViewController.h */,
+				1E9D6F2A1931EBDC007055BF /* WebViewController.m */,
 				1E11E2D919276A3400508731 /* RelatedContentsView.h */,
 				1E11E2DA19276A3400508731 /* RelatedContentsView.m */,
 			);
@@ -325,6 +330,7 @@
 				1E11E2D219274C2600508731 /* ContentRootViewController.m in Sources */,
 				1E11E2E21928EF3600508731 /* ContentViewController.m in Sources */,
 				1E7A17B219244B490097541D /* AppDelegate.m in Sources */,
+				1E9D6F2B1931EBDC007055BF /* WebViewController.m in Sources */,
 				1E11E2C919274AC700508731 /* ContentDataViewController.m in Sources */,
 				1E11E2D519275EF900508731 /* ContentModelController.m in Sources */,
 				1E11E2DB19276A3400508731 /* RelatedContentsView.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContentViewController : UIViewController
+@interface ContentViewController : UIViewController <UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *statusBarBackgroundView;
 

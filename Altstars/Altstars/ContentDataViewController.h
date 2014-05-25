@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "RelatedContentsView.h"
+#import "WebViewController.h"
 
 @interface ContentDataViewController : UIViewController
 
