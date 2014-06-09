@@ -44,7 +44,7 @@
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              // 通信に成功した場合の処理
              
-             NSLog(@"responseObject: %@", responseObject[@"contents"]);
+             //NSLog(@"responseObject: %@", responseObject[@"contents"]);
              self.modelController.pageData = [responseObject[@"contents"] copy];
              
              self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
@@ -65,9 +65,6 @@
              [self.pageViewController didMoveToParentViewController:self];
              
              self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
-             
-             
-
              
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {

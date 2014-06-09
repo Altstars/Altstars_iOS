@@ -115,10 +115,10 @@
 				1E11E2D419275EF900508731 /* ContentModelController.m */,
 				1E11E2C719274AC700508731 /* ContentDataViewController.h */,
 				1E11E2C819274AC700508731 /* ContentDataViewController.m */,
-				1E9D6F291931EBDC007055BF /* WebViewController.h */,
-				1E9D6F2A1931EBDC007055BF /* WebViewController.m */,
 				1E11E2D919276A3400508731 /* RelatedContentsView.h */,
 				1E11E2DA19276A3400508731 /* RelatedContentsView.m */,
+				1E9D6F291931EBDC007055BF /* WebViewController.h */,
+				1E9D6F2A1931EBDC007055BF /* WebViewController.m */,
 			);
 			name = Content;
 			sourceTree = "<group>";

@@ -10,5 +10,6 @@
 
 @interface RelatedContentsView : UICollectionView <UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (nonatomic, strong) NSArray *related_data;
 
 @end

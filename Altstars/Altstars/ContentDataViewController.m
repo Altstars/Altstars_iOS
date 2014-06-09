@@ -8,6 +8,8 @@
 
 #import "ContentDataViewController.h"
 
+#import <AFNetworking.h>
+
 @interface ContentDataViewController ()
 
 @end
@@ -45,6 +47,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSString *content_id = (NSString*)self.dataObject[@"id"];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:[NSString stringWithFormat:@"http://altstars.koukilab.com/content/%@/related", content_id]
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSLog(@"responseObject: %@", responseObject);
+             self.relatedContentsView.related_data = responseObject;
+             [self.relatedContentsView reloadData];
+             
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             // エラーの場合はエラーの内容をコンソールに出力する
+             NSLog(@"Error: %@", error);
+         }];
+
+ 
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -53,7 +73,7 @@
     
     self.mainTitle.text = self.dataObject[@"title"];
     
-    UIImageView *imageView = [[UIImageView alloc]init];
+    UIImageView *imageView = [[UIImageView alloc] init];
     NSURL *url = [NSURL URLWithString:self.dataObject[@"image"]];
     NSData *data = [NSData dataWithContentsOfURL:url];
     self.mainImage.image = [[UIImage alloc] initWithData:data];
