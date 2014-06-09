@@ -42,9 +42,25 @@
     UIImageView *related_view = (UIImageView*)[cell viewWithTag:1];
     UILabel *related_title = (UILabel*)[cell viewWithTag:2];
     
+    
+
+    //画像を非同期で取得
+    NSString *imageURL = content[@"image"];
+    dispatch_queue_t q_global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_t q_main = dispatch_get_main_queue();
+    dispatch_async(q_global, ^{
+        UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL: [NSURL URLWithString: imageURL]]];
+        dispatch_async(q_main, ^{
+            related_view.image = img;
+        });
+    });
+
+    /*
     NSURL *url = [NSURL URLWithString:content[@"image"]];
     NSData *data = [NSData dataWithContentsOfURL:url];
     related_view.image = [[UIImage alloc] initWithData:data];
+    */
+    
     
     related_title.text = content[@"title"];
     
