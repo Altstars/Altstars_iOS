@@ -10,6 +10,8 @@
 
 #import <AFNetworking.h>
 
+#import "PaulClient.h"
+
 @interface ContentDataViewController ()
 
 @end
@@ -50,20 +52,19 @@
     
     NSString *content_id = (NSString*)self.dataObject[@"id"];
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:[NSString stringWithFormat:@"http://altstars.koukilab.com/content/%@/related", content_id]
-      parameters:nil
-         success:^(AFHTTPRequestOperation *operation, id responseObject) {
-             NSLog(@"responseObject: %@", responseObject);
-             self.relatedContentsView.related_data = responseObject;
-             [self.relatedContentsView reloadData];
-             
-         }
-         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-             // エラーの場合はエラーの内容をコンソールに出力する
-             NSLog(@"Error: %@", error);
-         }];
-
+    PaulClient *client = [PaulClient sharedClient];
+    [client relatedContentWithId:content_id
+                   success:^(NSURLSessionDataTask *task, id responseObject) {
+                       NSLog(@"responseObject: %@", responseObject);
+                       self.relatedContentsView.related_data = responseObject;
+                       [self.relatedContentsView reloadData];
+                       
+                   }
+                   failure:^(NSURLSessionDataTask *task, NSError *error) {
+                       // エラーの場合はエラーの内容をコンソールに出力する
+                       NSLog(@"Error: %@", error);
+                   }];
+    
  
 }
 
