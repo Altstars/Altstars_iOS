@@ -14,6 +14,26 @@
 {
     // Override point for customization after application launch.
    
+    [FBLoginView class];
+ 
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    
+    NSString *auth = (NSString*)[ud objectForKey:@"auth"];
+    
+    NSLog(@"%@", auth);
+    
+   
+    if(auth != NULL){
+        return YES;
+    }
+    
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
     
     /*
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:41.0/256 green:133.0/256 blue:223.0/256 alpha:1.0]];
@@ -21,7 +41,20 @@
     */
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
+    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    
+    // You can add your app-specific url handling code here if needed
+    
+    return wasHandled;
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

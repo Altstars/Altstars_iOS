@@ -32,6 +32,19 @@
 	</array>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleDefault</string>
+	<key>FacebookAppID</key>
+	<string>534093050030246</string>
+	<key>FacebookDisplayName</key>
+	<string>Maga.me</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb534093050030246</string>
+			</array>
+		</dict>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

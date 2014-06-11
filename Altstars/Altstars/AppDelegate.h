@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/Facebook.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
