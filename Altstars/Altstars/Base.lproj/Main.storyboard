@@ -34,7 +34,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Altstars" id="mef-UU-sxT">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="cPQ-60-ikf"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="D0a-Js-AAb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="D0a-Js-AAb">
+                            <connections>
+                                <action selector="forDebugRefleshAuth:" destination="uDm-Lf-qHb" id="T4c-6s-b2n"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="statusBarBackgroundView" destination="wXa-oS-rof" id="PMf-cX-g7j"/>

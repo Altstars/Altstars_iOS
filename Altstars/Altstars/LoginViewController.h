@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
 
+#import "PaulClient.h"
+
 @interface LoginViewController : UIViewController <FBLoginViewDelegate>
 
 @end

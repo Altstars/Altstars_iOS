@@ -49,9 +49,23 @@
     
     
     //TODO:authをサーバーにアクセスして、Altstarsのセッションキーを貰うようにする
-    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setObject:fbAccessToken forKey:@"auth"];
+    PaulClient *client = [PaulClient sharedClient];
+    [client authorizationWithFacebook:fbAccessToken
+                   success:^(NSURLSessionDataTask *task, id responseObject) {
+                       // 通信に成功した場合の処理
+                       NSLog(@"%@", responseObject);
+                       
+                       NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+                       [ud setObject:responseObject[@"auth"] forKey:@"auth"];
+                       [self moveToFirstScene];
+                      
+                   }
+                   failure:^(NSURLSessionDataTask *task, NSError *error) {
+                       NSLog(@"Error: %@", error);
+                   }];
+ 
     
+ 
     /* //writeパーミッションの取り方
     if ([FBSession.activeSession.permissions indexOfObject:@"publish_actions"] == NSNotFound) {
         [FBSession.activeSession

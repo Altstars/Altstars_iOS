@@ -23,7 +23,6 @@
     
     NSLog(@"%@", auth);
     
-   
     if(auth != NULL){
         return YES;
     }

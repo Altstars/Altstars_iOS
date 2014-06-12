@@ -27,6 +27,25 @@
     return sharedClient;
 }
 
+- (void)authorizationWithFacebook:(NSString*)facebook_id
+                     success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                     failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
+{
+    __weak PaulClient *weakSelf = self;
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        NSString *path = [NSString stringWithFormat:@"auth/login"];
+        [weakSelf POST:path
+            parameters:@{@"access_token": facebook_id, @"host":@"facebook"}
+               success:success
+               failure:failure
+         ];
+    });
+}
+
+
+
 - (void)magazineWithId:(NSString*)id
     success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
     failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
@@ -62,7 +81,6 @@ failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
               failure:failure
          ];
     });
-    
 }
 
 @end

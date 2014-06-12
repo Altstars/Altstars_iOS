@@ -8,6 +8,8 @@
 
 #import "ContentViewController.h"
 
+#import <FacebookSDK/FacebookSDK.h>
+
 @interface ContentViewController ()
 
 @end
@@ -38,6 +40,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)forDebugRefleshAuth:(id)sender {
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud removeObjectForKey:@"auth"];
+    
+    FBSession *session = [[FBSession alloc] init];
+    [session closeAndClearTokenInformation];
+
+    NSLog(@"Reflesh authorization");
 }
 
 /*
