@@ -12,6 +12,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //For Deploy Gate
+    [[DeployGateSDK sharedInstance] launchApplicationWithAuthor:@"deploygate.b4997c9d374c3268a1703f10851e3fcfa9d792e2" key:@"01c7e01db9f88c772a7f9c7f073ba55c41d0aa3b"];
+
+    
     // Override point for customization after application launch.
    
     [FBLoginView class];

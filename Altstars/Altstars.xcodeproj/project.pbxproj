@@ -30,6 +30,12 @@
 		1E7D0DC8194D7A7F004719B9 /* MainContentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */; };
 		1E7D0DCA194D7B77004719B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7D0DC9194D7B77004719B9 /* QuartzCore.framework */; };
 		1E7D0DCE194DAAD6004719B9 /* magame_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DCD194DAAD6004719B9 /* magame_logo.png */; };
+		1E7D0DD8194DABAF004719B9 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DD0194DABAF004719B9 /* CHANGELOG.txt */; };
+		1E7D0DD9194DABAF004719B9 /* DeployGateSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7D0DD1194DABAF004719B9 /* DeployGateSDK.framework */; };
+		1E7D0DDA194DABAF004719B9 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DD2194DABAF004719B9 /* LICENSE.txt */; };
+		1E7D0DDB194DABAF004719B9 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DD3194DABAF004719B9 /* README.txt */; };
+		1E7D0DDC194DABAF004719B9 /* DeployGateSDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DD5194DABAF004719B9 /* DeployGateSDK.strings */; };
+		1E7D0DDE194DABC9004719B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7D0DDD194DABC9004719B9 /* SystemConfiguration.framework */; };
 		1E9D6F2B1931EBDC007055BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2A1931EBDC007055BF /* WebViewController.m */; };
 		1E9D6F2D1931F6A1007055BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2C1931F6A1007055BF /* icon.png */; };
 		1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2E1931FAEF007055BF /* icon120.png */; };
@@ -85,6 +91,13 @@
 		1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContentViewCell.m; sourceTree = "<group>"; };
 		1E7D0DC9194D7B77004719B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1E7D0DCD194DAAD6004719B9 /* magame_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magame_logo.png; sourceTree = "<group>"; };
+		1E7D0DD0194DABAF004719B9 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
+		1E7D0DD1194DABAF004719B9 /* DeployGateSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeployGateSDK.framework; sourceTree = "<group>"; };
+		1E7D0DD2194DABAF004719B9 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		1E7D0DD3194DABAF004719B9 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1E7D0DD6194DABAF004719B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DeployGateSDK.strings; sourceTree = "<group>"; };
+		1E7D0DD7194DABAF004719B9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/DeployGateSDK.strings; sourceTree = "<group>"; };
+		1E7D0DDD194DABC9004719B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1E9D6F291931EBDC007055BF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		1E9D6F2A1931EBDC007055BF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		1E9D6F2C1931F6A1007055BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -103,11 +116,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7D0DDE194DABC9004719B9 /* SystemConfiguration.framework in Frameworks */,
 				1E7D0DCA194D7B77004719B9 /* QuartzCore.framework in Frameworks */,
 				1E7A17A419244B490097541D /* CoreGraphics.framework in Frameworks */,
 				1E7A17A619244B490097541D /* UIKit.framework in Frameworks */,
 				1E7A17A219244B490097541D /* Foundation.framework in Frameworks */,
 				5C4E86F28AD64426B9E2D23A /* libPods.a in Frameworks */,
+				1E7D0DD9194DABAF004719B9 /* DeployGateSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +185,8 @@
 		1E7A17A019244B490097541D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E7D0DDD194DABC9004719B9 /* SystemConfiguration.framework */,
+				1E7D0DCF194DABAF004719B9 /* DeployGateSDK1.0.embeddedframework */,
 				1E7D0DC9194D7B77004719B9 /* QuartzCore.framework */,
 				1E7A17A119244B490097541D /* Foundation.framework */,
 				1E7A17A319244B490097541D /* CoreGraphics.framework */,
@@ -227,6 +244,26 @@
 				1E7A17C919244B490097541D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E7D0DCF194DABAF004719B9 /* DeployGateSDK1.0.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				1E7D0DD0194DABAF004719B9 /* CHANGELOG.txt */,
+				1E7D0DD1194DABAF004719B9 /* DeployGateSDK.framework */,
+				1E7D0DD2194DABAF004719B9 /* LICENSE.txt */,
+				1E7D0DD3194DABAF004719B9 /* README.txt */,
+				1E7D0DD4194DABAF004719B9 /* Resources */,
+			);
+			path = DeployGateSDK1.0.embeddedframework;
+			sourceTree = "<group>";
+		};
+		1E7D0DD4194DABAF004719B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E7D0DD5194DABAF004719B9 /* DeployGateSDK.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1ED22650194883B30006049D /* API */ = {
@@ -301,6 +338,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 1E7A179519244B490097541D;
 			productRefGroup = 1E7A179F19244B490097541D /* Products */;
@@ -321,6 +359,10 @@
 				1E7A17BA19244B490097541D /* Images.xcassets in Resources */,
 				1E7D0DCE194DAAD6004719B9 /* magame_logo.png in Resources */,
 				1E9D6F2D1931F6A1007055BF /* icon.png in Resources */,
+				1E7D0DDA194DABAF004719B9 /* LICENSE.txt in Resources */,
+				1E7D0DDB194DABAF004719B9 /* README.txt in Resources */,
+				1E7D0DDC194DABAF004719B9 /* DeployGateSDK.strings in Resources */,
+				1E7D0DD8194DABAF004719B9 /* CHANGELOG.txt in Resources */,
 				1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */,
 				1E7A17AC19244B490097541D /* InfoPlist.strings in Resources */,
 				1E11E2C61927497C00508731 /* article_image.png in Resources */,
@@ -435,6 +477,15 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		1E7D0DD5194DABAF004719B9 /* DeployGateSDK.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E7D0DD6194DABAF004719B9 /* en */,
+				1E7D0DD7194DABAF004719B9 /* ja */,
+			);
+			name = DeployGateSDK.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -514,6 +565,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DeployGateSDK1.0.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Altstars/Altstars-Prefix.pch";
 				INFOPLIST_FILE = "Altstars/Altstars-Info.plist";
@@ -528,6 +583,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DeployGateSDK1.0.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Altstars/Altstars-Prefix.pch";
 				INFOPLIST_FILE = "Altstars/Altstars-Info.plist";
