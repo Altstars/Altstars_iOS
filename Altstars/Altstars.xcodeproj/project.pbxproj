@@ -29,6 +29,7 @@
 		1E7D0DC5194D7A6B004719B9 /* RelatedContentsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D0DC4194D7A6B004719B9 /* RelatedContentsViewCell.m */; };
 		1E7D0DC8194D7A7F004719B9 /* MainContentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */; };
 		1E7D0DCA194D7B77004719B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7D0DC9194D7B77004719B9 /* QuartzCore.framework */; };
+		1E7D0DCC194D8AFA004719B9 /* magame_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DCB194D8AFA004719B9 /* magame_logo.png */; };
 		1E9D6F2B1931EBDC007055BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2A1931EBDC007055BF /* WebViewController.m */; };
 		1E9D6F2D1931F6A1007055BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2C1931F6A1007055BF /* icon.png */; };
 		1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2E1931FAEF007055BF /* icon120.png */; };
@@ -83,6 +84,7 @@
 		1E7D0DC6194D7A7E004719B9 /* MainContentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContentViewCell.h; sourceTree = "<group>"; };
 		1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContentViewCell.m; sourceTree = "<group>"; };
 		1E7D0DC9194D7B77004719B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1E7D0DCB194D8AFA004719B9 /* magame_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magame_logo.png; sourceTree = "<group>"; };
 		1E9D6F291931EBDC007055BF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		1E9D6F2A1931EBDC007055BF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		1E9D6F2C1931F6A1007055BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				1E11E2C51927497C00508731 /* article_image.png */,
 				1E9D6F2E1931FAEF007055BF /* icon120.png */,
 				1E9D6F2C1931F6A1007055BF /* icon.png */,
+				1E7D0DCB194D8AFA004719B9 /* magame_logo.png */,
 				1E7A17A819244B490097541D /* Supporting Files */,
 			);
 			path = Altstars;
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E7A17BA19244B490097541D /* Images.xcassets in Resources */,
+				1E7D0DCC194D8AFA004719B9 /* magame_logo.png in Resources */,
 				1E9D6F2D1931F6A1007055BF /* icon.png in Resources */,
 				1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */,
 				1E7A17AC19244B490097541D /* InfoPlist.strings in Resources */,
