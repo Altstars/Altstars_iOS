@@ -23,16 +23,19 @@ PODS:
   - Bolts (1.1.0)
   - Facebook-iOS-SDK (3.14.1):
     - Bolts
+  - REFrostedViewController (2.4.5)
 
 DEPENDENCIES:
   - AFNetworkActivityLogger (~> 2.0)
   - AFNetworking (~> 2.0)
   - Facebook-iOS-SDK (~> 3.0)
+  - REFrostedViewController (~> 2.4.5)
 
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: 45ca411593444cbdc401b12924b4c17082ad512a
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
   Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
   Facebook-iOS-SDK: e9b3d5ac54ee3e5e693f4eef470b97911b3d076d
+  REFrostedViewController: 93c85bf09c95c8166fc5314aa6811fb33611afb7
 
 COCOAPODS: 0.32.1

@@ -212,12 +212,7 @@
 				1ED22650194883B30006049D /* API */,
 				1E11E2DC19276A5600508731 /* Content */,
 				1E7A17B919244B490097541D /* Images.xcassets */,
-				1E11E2C51927497C00508731 /* article_image.png */,
-				1E9D6F2E1931FAEF007055BF /* icon120.png */,
-				1E9D6F2C1931F6A1007055BF /* icon.png */,
-				1E7D0DCD194DAAD6004719B9 /* magame_logo.png */,
-				1E7D0DDF194DB634004719B9 /* magame_page_main.png */,
-				1E7D0DE1194DB63A004719B9 /* magame_page_related.png */,
+				1E7D0DE3194DB8AD004719B9 /* Images */,
 				1E7A17A819244B490097541D /* Supporting Files */,
 			);
 			path = Altstars;
@@ -270,6 +265,19 @@
 				1E7D0DD5194DABAF004719B9 /* DeployGateSDK.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E7D0DE3194DB8AD004719B9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1E11E2C51927497C00508731 /* article_image.png */,
+				1E9D6F2E1931FAEF007055BF /* icon120.png */,
+				1E9D6F2C1931F6A1007055BF /* icon.png */,
+				1E7D0DCD194DAAD6004719B9 /* magame_logo.png */,
+				1E7D0DDF194DB634004719B9 /* magame_page_main.png */,
+				1E7D0DE1194DB63A004719B9 /* magame_page_related.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		1ED22650194883B30006049D /* API */ = {
