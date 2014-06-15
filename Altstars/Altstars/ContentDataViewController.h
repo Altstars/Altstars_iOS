@@ -10,7 +10,6 @@
 
 #import "ContentsView.h"
 #import "WebViewController.h"
-#import "REFrostedViewController.h"
 
 @interface ContentDataViewController : UIViewController <ContentsViewDelegate>
 
