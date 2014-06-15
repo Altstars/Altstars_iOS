@@ -8,16 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-#import "RelatedContentsView.h"
+#import "ContentsView.h"
 #import "WebViewController.h"
 
-@interface ContentDataViewController : UIViewController <RelatedContentsViewDelegate>
+@interface ContentDataViewController : UIViewController <ContentsViewDelegate>
 
 @property (strong, nonatomic) id dataObject;
 
-@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
-@property (weak, nonatomic) IBOutlet UILabel *mainTitle;
-
-@property (weak, nonatomic) IBOutlet RelatedContentsView *relatedContentsView;
+@property (weak, nonatomic) IBOutlet ContentsView *contentsView;
 
 @end

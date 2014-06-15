@@ -11,7 +11,7 @@
 		1E11E2C919274AC700508731 /* ContentDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2C819274AC700508731 /* ContentDataViewController.m */; };
 		1E11E2D219274C2600508731 /* ContentRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2D119274C2600508731 /* ContentRootViewController.m */; };
 		1E11E2D519275EF900508731 /* ContentModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2D419275EF900508731 /* ContentModelController.m */; };
-		1E11E2DB19276A3400508731 /* RelatedContentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2DA19276A3400508731 /* RelatedContentsView.m */; };
+		1E11E2DB19276A3400508731 /* ContentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2DA19276A3400508731 /* ContentsView.m */; };
 		1E11E2E21928EF3600508731 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2E11928EF3600508731 /* ContentViewController.m */; };
 		1E7A17A219244B490097541D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A119244B490097541D /* Foundation.framework */; };
 		1E7A17A419244B490097541D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A319244B490097541D /* CoreGraphics.framework */; };
@@ -26,13 +26,16 @@
 		1E7A17C319244B490097541D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A519244B490097541D /* UIKit.framework */; };
 		1E7A17CB19244B490097541D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A17C919244B490097541D /* InfoPlist.strings */; };
 		1E7A17CD19244B490097541D /* AltstarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A17CC19244B490097541D /* AltstarsTests.m */; };
+		1E7D0DC5194D7A6B004719B9 /* RelatedContentsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D0DC4194D7A6B004719B9 /* RelatedContentsViewCell.m */; };
+		1E7D0DC8194D7A7F004719B9 /* MainContentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */; };
+		1E7D0DCA194D7B77004719B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7D0DC9194D7B77004719B9 /* QuartzCore.framework */; };
+		1E7D0DCC194D8AFA004719B9 /* magame_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DCB194D8AFA004719B9 /* magame_logo.png */; };
 		1E9D6F2B1931EBDC007055BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2A1931EBDC007055BF /* WebViewController.m */; };
 		1E9D6F2D1931F6A1007055BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2C1931F6A1007055BF /* icon.png */; };
 		1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2E1931FAEF007055BF /* icon120.png */; };
 		1ED22643194850EA0006049D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED22642194850EA0006049D /* LoginViewController.m */; };
 		1ED2264C194883920006049D /* PaulRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2264B194883920006049D /* PaulRequestSerializer.m */; };
 		1ED2264F194883AC0006049D /* PaulClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2264E194883AC0006049D /* PaulClient.m */; };
-		1ED4229A194D5F230057D1B6 /* RelatedContentsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED42299194D5F230057D1B6 /* RelatedContentsViewCell.m */; };
 		5C4E86F28AD64426B9E2D23A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 142803E369434BD7BB582C78 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +58,8 @@
 		1E11E2D119274C2600508731 /* ContentRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentRootViewController.m; sourceTree = "<group>"; };
 		1E11E2D319275EF900508731 /* ContentModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentModelController.h; sourceTree = "<group>"; };
 		1E11E2D419275EF900508731 /* ContentModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentModelController.m; sourceTree = "<group>"; };
-		1E11E2D919276A3400508731 /* RelatedContentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedContentsView.h; sourceTree = "<group>"; };
-		1E11E2DA19276A3400508731 /* RelatedContentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedContentsView.m; sourceTree = "<group>"; };
+		1E11E2D919276A3400508731 /* ContentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentsView.h; sourceTree = "<group>"; };
+		1E11E2DA19276A3400508731 /* ContentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentsView.m; sourceTree = "<group>"; };
 		1E11E2E01928EF3600508731 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		1E11E2E11928EF3600508731 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		1E7A179E19244B490097541D /* Altstars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Altstars.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +79,12 @@
 		1E7A17C819244B490097541D /* AltstarsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AltstarsTests-Info.plist"; sourceTree = "<group>"; };
 		1E7A17CA19244B490097541D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E7A17CC19244B490097541D /* AltstarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AltstarsTests.m; sourceTree = "<group>"; };
+		1E7D0DC3194D7A6B004719B9 /* RelatedContentsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedContentsViewCell.h; sourceTree = "<group>"; };
+		1E7D0DC4194D7A6B004719B9 /* RelatedContentsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedContentsViewCell.m; sourceTree = "<group>"; };
+		1E7D0DC6194D7A7E004719B9 /* MainContentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContentViewCell.h; sourceTree = "<group>"; };
+		1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContentViewCell.m; sourceTree = "<group>"; };
+		1E7D0DC9194D7B77004719B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1E7D0DCB194D8AFA004719B9 /* magame_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magame_logo.png; sourceTree = "<group>"; };
 		1E9D6F291931EBDC007055BF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		1E9D6F2A1931EBDC007055BF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		1E9D6F2C1931F6A1007055BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -86,8 +95,6 @@
 		1ED2264B194883920006049D /* PaulRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaulRequestSerializer.m; sourceTree = "<group>"; };
 		1ED2264D194883AC0006049D /* PaulClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaulClient.h; sourceTree = "<group>"; };
 		1ED2264E194883AC0006049D /* PaulClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaulClient.m; sourceTree = "<group>"; };
-		1ED42298194D5F230057D1B6 /* RelatedContentsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedContentsViewCell.h; sourceTree = "<group>"; };
-		1ED42299194D5F230057D1B6 /* RelatedContentsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedContentsViewCell.m; sourceTree = "<group>"; };
 		60B699C47BAD4A37BCF24B27 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7D0DCA194D7B77004719B9 /* QuartzCore.framework in Frameworks */,
 				1E7A17A419244B490097541D /* CoreGraphics.framework in Frameworks */,
 				1E7A17A619244B490097541D /* UIKit.framework in Frameworks */,
 				1E7A17A219244B490097541D /* Foundation.framework in Frameworks */,
@@ -127,10 +135,12 @@
 				1E11E2D419275EF900508731 /* ContentModelController.m */,
 				1E11E2C719274AC700508731 /* ContentDataViewController.h */,
 				1E11E2C819274AC700508731 /* ContentDataViewController.m */,
-				1E11E2D919276A3400508731 /* RelatedContentsView.h */,
-				1E11E2DA19276A3400508731 /* RelatedContentsView.m */,
-				1ED42298194D5F230057D1B6 /* RelatedContentsViewCell.h */,
-				1ED42299194D5F230057D1B6 /* RelatedContentsViewCell.m */,
+				1E11E2D919276A3400508731 /* ContentsView.h */,
+				1E11E2DA19276A3400508731 /* ContentsView.m */,
+				1E7D0DC6194D7A7E004719B9 /* MainContentViewCell.h */,
+				1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */,
+				1E7D0DC3194D7A6B004719B9 /* RelatedContentsViewCell.h */,
+				1E7D0DC4194D7A6B004719B9 /* RelatedContentsViewCell.m */,
 				1E9D6F291931EBDC007055BF /* WebViewController.h */,
 				1E9D6F2A1931EBDC007055BF /* WebViewController.m */,
 			);
@@ -160,6 +170,7 @@
 		1E7A17A019244B490097541D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E7D0DC9194D7B77004719B9 /* QuartzCore.framework */,
 				1E7A17A119244B490097541D /* Foundation.framework */,
 				1E7A17A319244B490097541D /* CoreGraphics.framework */,
 				1E7A17A519244B490097541D /* UIKit.framework */,
@@ -183,6 +194,7 @@
 				1E11E2C51927497C00508731 /* article_image.png */,
 				1E9D6F2E1931FAEF007055BF /* icon120.png */,
 				1E9D6F2C1931F6A1007055BF /* icon.png */,
+				1E7D0DCB194D8AFA004719B9 /* magame_logo.png */,
 				1E7A17A819244B490097541D /* Supporting Files */,
 			);
 			path = Altstars;
@@ -307,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E7A17BA19244B490097541D /* Images.xcassets in Resources */,
+				1E7D0DCC194D8AFA004719B9 /* magame_logo.png in Resources */,
 				1E9D6F2D1931F6A1007055BF /* icon.png in Resources */,
 				1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */,
 				1E7A17AC19244B490097541D /* InfoPlist.strings in Resources */,
@@ -364,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E11E2D219274C2600508731 /* ContentRootViewController.m in Sources */,
+				1E7D0DC8194D7A7F004719B9 /* MainContentViewCell.m in Sources */,
 				1ED2264F194883AC0006049D /* PaulClient.m in Sources */,
 				1E11E2E21928EF3600508731 /* ContentViewController.m in Sources */,
 				1E7A17B219244B490097541D /* AppDelegate.m in Sources */,
@@ -372,8 +386,8 @@
 				1ED2264C194883920006049D /* PaulRequestSerializer.m in Sources */,
 				1ED22643194850EA0006049D /* LoginViewController.m in Sources */,
 				1E11E2D519275EF900508731 /* ContentModelController.m in Sources */,
-				1E11E2DB19276A3400508731 /* RelatedContentsView.m in Sources */,
-				1ED4229A194D5F230057D1B6 /* RelatedContentsViewCell.m in Sources */,
+				1E11E2DB19276A3400508731 /* ContentsView.m in Sources */,
+				1E7D0DC5194D7A6B004719B9 /* RelatedContentsViewCell.m in Sources */,
 				1E7A17AE19244B490097541D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

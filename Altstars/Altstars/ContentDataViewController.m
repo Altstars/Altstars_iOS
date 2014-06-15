@@ -63,7 +63,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.relatedContentsView setTouchedDelegate:self];
+    [self.contentsView setTouchedDelegate:self];
     
     NSString *content_id = (NSString*)self.dataObject[@"id"];
     
@@ -71,8 +71,8 @@
     [client relatedContentWithId:content_id
                    success:^(NSURLSessionDataTask *task, id responseObject) {
                        NSLog(@"responseObject: %@", responseObject);
-                       self.relatedContentsView.related_data = responseObject;
-                       [self.relatedContentsView reloadData];
+                       self.contentsView.related_data = responseObject;
+                       [self.contentsView reloadData];
                    }
                    failure:^(NSURLSessionDataTask *task, NSError *error) {
                        // エラーの場合はエラーの内容をコンソールに出力する
@@ -86,13 +86,13 @@
 {
     [super viewWillAppear:animated];
     
-    self.mainTitle.text = self.dataObject[@"title"];
+    self.contentsView.mainTitle = self.dataObject[@"title"];
     
-    UIImageView *imageView = [[UIImageView alloc] init];
     NSURL *url = [NSURL URLWithString:self.dataObject[@"image"]];
     NSData *data = [NSData dataWithContentsOfURL:url];
-    self.mainImage.image = [[UIImage alloc] initWithData:data];
-
+    self.contentsView.mainImage = [[UIImage alloc] initWithData:data];
+    
+    self.contentsView.mainURL = self.dataObject[@"url"];
 }
 
 - (void)didReceiveMemoryWarning

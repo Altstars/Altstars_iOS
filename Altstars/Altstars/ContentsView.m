@@ -1,14 +1,14 @@
 //
-//  RelatedContentsView.m
+//  ContentsView.m
 //  Altstars
 //
 //  Created by Kouki Saito on 2014/05/17.
 //  Copyright (c) 2014年 Kouki. All rights reserved.
 //
 
-#import "RelatedContentsView.h"
+#import "ContentsView.h"
 
-@implementation RelatedContentsView
+@implementation ContentsView
 @synthesize touchedDelegate;
 
 - (id) initWithCoder:(NSCoder*)coder {
@@ -27,24 +27,41 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 1;
+    return 2;
 }
 
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return [self.related_data count];
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    if (section == 0){
+        return 1;
+    }
+    else if(section == 1){
+        return [self.related_data count];
+    }
+    return 0;
 }
 
 //Method to create cell at index path
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    RelatedContentsViewCell *cell;
+    UICollectionViewCell *cell;
+    if(indexPath.section == 0){
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainItem" forIndexPath:indexPath];
+        UIImageView *mainView = (UIImageView*)[cell viewWithTag:1];
+        mainView.image = self.mainImage;
+        UILabel *mainTitle = (UILabel*)[cell viewWithTag:2];
+        mainTitle.text = self.mainTitle;
+
+        return cell;
+    }
+    
+    
     id content = self.related_data[indexPath.row];
     
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DefaultRelatedItem" forIndexPath:indexPath];
     
     UIImageView *related_view = (UIImageView*)[cell viewWithTag:1];
     UILabel *related_title = (UILabel*)[cell viewWithTag:2];
-    
     
 
     //画像を非同期で取得
@@ -71,13 +88,32 @@
     return cell;
 }
 
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.section == 0){
+        return CGSizeMake(320.0, 348.0);
+    }
+    else if(indexPath.section == 1){
+        return CGSizeMake(320.0, 100.0);
+    }
+    return CGSizeMake(0.0, 0.0);
+}
+
 - (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    id content = self.related_data[indexPath.row];
-    NSString *url = content[@"url"];
-    NSLog(@"touched:%@", url);
     
-    [self.touchedDelegate contentsViewCellTouched:url];
+    if (indexPath.section == 0){
+        NSString *url = self.mainURL;
+        [self.touchedDelegate contentsViewCellTouched:url];
+    }
+    else if(indexPath.section == 1){
+        id content = self.related_data[indexPath.row];
+        NSString *url = content[@"url"];
+        NSLog(@"touched:%@", url);
+    
+        [self.touchedDelegate contentsViewCellTouched:url];
+    }
 
     /*
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
