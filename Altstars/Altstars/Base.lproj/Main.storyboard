@@ -82,7 +82,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="article_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="TLV-mo-dhW">
+                                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="article_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="TLV-mo-dhW">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -120,7 +120,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Related_image" image="article_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="gKy-TO-Sio">
+                                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Related_image" image="article_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="gKy-TO-Sio">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </imageView>
