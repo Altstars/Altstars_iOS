@@ -17,6 +17,8 @@
         [self setDataSource:self];
         [self setDelegate:self];
         self.related_data = [[NSArray alloc] init];
+        
+        self.scrollEnabled = YES;
     }
     return self;
 }
@@ -30,6 +32,9 @@
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return [self.related_data count];
 }
+
+
+
 
 //Method to create cell at index path
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{

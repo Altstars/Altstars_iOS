@@ -36,8 +36,9 @@
     
     /*
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:41.0/256 green:133.0/256 blue:223.0/256 alpha:1.0]];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:250.0/256 green:250.0/256 blue:250.0/256 alpha:1.0]];
     */
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+
     return YES;
 }
 

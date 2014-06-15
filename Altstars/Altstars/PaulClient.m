@@ -7,8 +7,8 @@
 //
 
 #import "PaulClient.h"
-//#define API_BASE_URL @"http://altstars.koukilab.com/"
-#define API_BASE_URL @"http://localhost:8888/"
+#define API_BASE_URL @"http://altstars.koukilab.com/"
+//#define API_BASE_URL @"http://localhost:8888/"
 
 
 @implementation PaulClient

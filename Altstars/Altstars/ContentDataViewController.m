@@ -58,7 +58,6 @@
                        NSLog(@"responseObject: %@", responseObject);
                        self.relatedContentsView.related_data = responseObject;
                        [self.relatedContentsView reloadData];
-                       
                    }
                    failure:^(NSURLSessionDataTask *task, NSError *error) {
                        // エラーの場合はエラーの内容をコンソールに出力する

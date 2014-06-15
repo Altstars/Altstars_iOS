@@ -32,8 +32,6 @@
 
     //[self.navigationBar setBackgroundColor:[UIColor orangeColor]];
 
-
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,6 +49,7 @@
 
     NSLog(@"Reflesh authorization");
 }
+
 
 /*
 #pragma mark - Navigation

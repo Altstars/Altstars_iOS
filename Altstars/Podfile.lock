@@ -30,9 +30,9 @@ DEPENDENCIES:
   - Facebook-iOS-SDK (~> 3.0)
 
 SPEC CHECKSUMS:
-  AFNetworkActivityLogger: 3d12891eb7cb77b4ad0f0b50fe5d877385bd135d
-  AFNetworking: 01aa7c3aa9a200b94943e54072a4373f14b3d219
-  Bolts: dc620a31cf67c29bce3e3d14a07a12e797a1a154
-  Facebook-iOS-SDK: 97e68fb37468bee2d90201fd0c9e4dccce5683d9
+  AFNetworkActivityLogger: 45ca411593444cbdc401b12924b4c17082ad512a
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
+  Facebook-iOS-SDK: e9b3d5ac54ee3e5e693f4eef470b97911b3d076d
 
 COCOAPODS: 0.32.1
