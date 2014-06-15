@@ -32,6 +32,7 @@
 		1ED22643194850EA0006049D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED22642194850EA0006049D /* LoginViewController.m */; };
 		1ED2264C194883920006049D /* PaulRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2264B194883920006049D /* PaulRequestSerializer.m */; };
 		1ED2264F194883AC0006049D /* PaulClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2264E194883AC0006049D /* PaulClient.m */; };
+		1ED4229A194D5F230057D1B6 /* RelatedContentsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED42299194D5F230057D1B6 /* RelatedContentsViewCell.m */; };
 		5C4E86F28AD64426B9E2D23A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 142803E369434BD7BB582C78 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,8 @@
 		1ED2264B194883920006049D /* PaulRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaulRequestSerializer.m; sourceTree = "<group>"; };
 		1ED2264D194883AC0006049D /* PaulClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaulClient.h; sourceTree = "<group>"; };
 		1ED2264E194883AC0006049D /* PaulClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaulClient.m; sourceTree = "<group>"; };
+		1ED42298194D5F230057D1B6 /* RelatedContentsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedContentsViewCell.h; sourceTree = "<group>"; };
+		1ED42299194D5F230057D1B6 /* RelatedContentsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedContentsViewCell.m; sourceTree = "<group>"; };
 		60B699C47BAD4A37BCF24B27 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +129,8 @@
 				1E11E2C819274AC700508731 /* ContentDataViewController.m */,
 				1E11E2D919276A3400508731 /* RelatedContentsView.h */,
 				1E11E2DA19276A3400508731 /* RelatedContentsView.m */,
+				1ED42298194D5F230057D1B6 /* RelatedContentsViewCell.h */,
+				1ED42299194D5F230057D1B6 /* RelatedContentsViewCell.m */,
 				1E9D6F291931EBDC007055BF /* WebViewController.h */,
 				1E9D6F2A1931EBDC007055BF /* WebViewController.m */,
 			);
@@ -368,6 +373,7 @@
 				1ED22643194850EA0006049D /* LoginViewController.m in Sources */,
 				1E11E2D519275EF900508731 /* ContentModelController.m in Sources */,
 				1E11E2DB19276A3400508731 /* RelatedContentsView.m in Sources */,
+				1ED4229A194D5F230057D1B6 /* RelatedContentsViewCell.m in Sources */,
 				1E7A17AE19244B490097541D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

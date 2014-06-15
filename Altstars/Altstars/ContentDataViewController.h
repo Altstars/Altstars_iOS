@@ -11,7 +11,7 @@
 #import "RelatedContentsView.h"
 #import "WebViewController.h"
 
-@interface ContentDataViewController : UIViewController
+@interface ContentDataViewController : UIViewController <RelatedContentsViewDelegate>
 
 @property (strong, nonatomic) id dataObject;
 

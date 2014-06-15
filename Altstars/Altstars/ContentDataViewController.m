@@ -23,6 +23,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }
@@ -36,19 +37,33 @@
             break;
     }
     
+    NSString *url = self.dataObject[@"url"];
+    [self pushWebViewControllerWithUrl:url];
+    
+}
+
+- (void)contentsViewCellTouched:(NSString *)url{
+    [self pushWebViewControllerWithUrl:url];
+}
+
+    
+
+- (void)pushWebViewControllerWithUrl:(NSString*)url
+{
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     WebViewController *webViewController = [storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
-    webViewController.url = self.dataObject[@"url"];
+    webViewController.url = url;
     
     UINavigationController *navigationController = self.parentViewController.parentViewController.parentViewController.navigationController;
     [navigationController pushViewController:webViewController animated:YES];
-}
 
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.relatedContentsView setTouchedDelegate:self];
     
     NSString *content_id = (NSString*)self.dataObject[@"id"];
     
@@ -85,6 +100,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation

@@ -76,17 +76,14 @@
     
 }
 
-// 当画面表示時
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    // NavigationBar 非表示
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    // NavigationBar 表示
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 

@@ -9,6 +9,7 @@
 #import "RelatedContentsView.h"
 
 @implementation RelatedContentsView
+@synthesize touchedDelegate;
 
 - (id) initWithCoder:(NSCoder*)coder {
 
@@ -33,13 +34,10 @@
     return [self.related_data count];
 }
 
-
-
-
 //Method to create cell at index path
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    UICollectionViewCell *cell;
+    RelatedContentsViewCell *cell;
     id content = self.related_data[indexPath.row];
     
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DefaultRelatedItem" forIndexPath:indexPath];
@@ -60,18 +58,37 @@
         });
     });
 
+
     /*
     NSURL *url = [NSURL URLWithString:content[@"image"]];
     NSData *data = [NSData dataWithContentsOfURL:url];
     related_view.image = [[UIImage alloc] initWithData:data];
     */
-    
+    cell.tintColor = [UIColor blackColor];
     
     related_title.text = content[@"title"];
     
     return cell;
 }
 
+- (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    id content = self.related_data[indexPath.row];
+    NSString *url = content[@"url"];
+    NSLog(@"touched:%@", url);
+    
+    [self.touchedDelegate contentsViewCellTouched:url];
+
+    /*
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    WebViewController *webViewController = [storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
+    webViewController.url = content[@"url"];
+    
+    
+    UINavigationController *navigationController = self.parentViewController.parentViewController.parentViewController.navigationController;
+    [navigationController pushViewController:webViewController animated:YES];
+     */
+}
 
 
 /*
