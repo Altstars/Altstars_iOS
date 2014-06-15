@@ -110,6 +110,13 @@
                                                             <nil key="highlightedColor"/>
                                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnp-FM-Vqn">
+                                                            <rect key="frame" x="0.0" y="6" width="49" height="33"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" image="magame_page_menu.png">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
@@ -126,7 +133,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magame_page_related.png" translatesAutoresizingMaskIntoConstraints="NO" id="2R2-D4-aun">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magame_page_sub.png" translatesAutoresizingMaskIntoConstraints="NO" id="2R2-D4-aun">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -307,7 +314,8 @@
         <image name="article_image.png" width="480" height="256"/>
         <image name="magame_logo.png" width="252" height="57"/>
         <image name="magame_page_main.png" width="320" height="348"/>
-        <image name="magame_page_related.png" width="320" height="100"/>
+        <image name="magame_page_menu.png" width="150" height="100"/>
+        <image name="magame_page_sub.png" width="320" height="100"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
