@@ -39,10 +39,10 @@
     self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
     
-    /*
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:41.0/256 green:133.0/256 blue:223.0/256 alpha:1.0]];
-    */
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:230.0/256 green:13.0/256 blue:123.0/256 alpha:1.0]];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     return YES;
 }

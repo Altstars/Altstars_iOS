@@ -37,8 +37,8 @@
 		1E7D0DDC194DABAF004719B9 /* DeployGateSDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DD5194DABAF004719B9 /* DeployGateSDK.strings */; };
 		1E7D0DDE194DABC9004719B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7D0DDD194DABC9004719B9 /* SystemConfiguration.framework */; };
 		1E7D0DE7194DBBB3004719B9 /* magame_page_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DE4194DBBB3004719B9 /* magame_page_main.png */; };
-		1E7D0DE8194DBBB3004719B9 /* magame_page_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DE5194DBBB3004719B9 /* magame_page_menu.png */; };
 		1E7D0DE9194DBBB3004719B9 /* magame_page_sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DE6194DBBB3004719B9 /* magame_page_sub.png */; };
+		1E7D0DEB194DBF9C004719B9 /* magame_page_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D0DEA194DBF9C004719B9 /* magame_page_menu.png */; };
 		1E9D6F2B1931EBDC007055BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2A1931EBDC007055BF /* WebViewController.m */; };
 		1E9D6F2D1931F6A1007055BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2C1931F6A1007055BF /* icon.png */; };
 		1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D6F2E1931FAEF007055BF /* icon120.png */; };
@@ -102,8 +102,8 @@
 		1E7D0DD7194DABAF004719B9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/DeployGateSDK.strings; sourceTree = "<group>"; };
 		1E7D0DDD194DABC9004719B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1E7D0DE4194DBBB3004719B9 /* magame_page_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magame_page_main.png; sourceTree = "<group>"; };
-		1E7D0DE5194DBBB3004719B9 /* magame_page_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magame_page_menu.png; sourceTree = "<group>"; };
 		1E7D0DE6194DBBB3004719B9 /* magame_page_sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magame_page_sub.png; sourceTree = "<group>"; };
+		1E7D0DEA194DBF9C004719B9 /* magame_page_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magame_page_menu.png; sourceTree = "<group>"; };
 		1E9D6F291931EBDC007055BF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		1E9D6F2A1931EBDC007055BF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		1E9D6F2C1931F6A1007055BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -277,7 +277,7 @@
 				1E9D6F2C1931F6A1007055BF /* icon.png */,
 				1E7D0DCD194DAAD6004719B9 /* magame_logo.png */,
 				1E7D0DE4194DBBB3004719B9 /* magame_page_main.png */,
-				1E7D0DE5194DBBB3004719B9 /* magame_page_menu.png */,
+				1E7D0DEA194DBF9C004719B9 /* magame_page_menu.png */,
 				1E7D0DE6194DBBB3004719B9 /* magame_page_sub.png */,
 			);
 			name = Images;
@@ -376,6 +376,7 @@
 				1E7A17BA19244B490097541D /* Images.xcassets in Resources */,
 				1E7D0DCE194DAAD6004719B9 /* magame_logo.png in Resources */,
 				1E9D6F2D1931F6A1007055BF /* icon.png in Resources */,
+				1E7D0DEB194DBF9C004719B9 /* magame_page_menu.png in Resources */,
 				1E7D0DE7194DBBB3004719B9 /* magame_page_main.png in Resources */,
 				1E7D0DDA194DABAF004719B9 /* LICENSE.txt in Resources */,
 				1E7D0DDB194DABAF004719B9 /* README.txt in Resources */,
@@ -384,7 +385,6 @@
 				1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */,
 				1E7A17AC19244B490097541D /* InfoPlist.strings in Resources */,
 				1E11E2C61927497C00508731 /* article_image.png in Resources */,
-				1E7D0DE8194DBBB3004719B9 /* magame_page_menu.png in Resources */,
 				1E7A17B519244B490097541D /* Main.storyboard in Resources */,
 				1E7D0DE9194DBBB3004719B9 /* magame_page_sub.png in Resources */,
 			);
