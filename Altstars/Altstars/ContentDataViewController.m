@@ -91,6 +91,8 @@
     NSURL *url = [NSURL URLWithString:self.dataObject[@"image"]];
     NSData *data = [NSData dataWithContentsOfURL:url];
     self.contentsView.mainImage = [[UIImage alloc] initWithData:data];
+    
+    self.contentsView.mainURL = self.dataObject[@"url"];
 }
 
 - (void)didReceiveMemoryWarning

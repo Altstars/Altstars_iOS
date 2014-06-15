@@ -102,11 +102,18 @@
 
 - (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    id content = self.related_data[indexPath.row];
-    NSString *url = content[@"url"];
-    NSLog(@"touched:%@", url);
     
-    [self.touchedDelegate contentsViewCellTouched:url];
+    if (indexPath.section == 0){
+        NSString *url = self.mainURL;
+        [self.touchedDelegate contentsViewCellTouched:url];
+    }
+    else if(indexPath.section == 1){
+        id content = self.related_data[indexPath.row];
+        NSString *url = content[@"url"];
+        NSLog(@"touched:%@", url);
+    
+        [self.touchedDelegate contentsViewCellTouched:url];
+    }
 
     /*
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];

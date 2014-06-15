@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) UIImage *mainImage;
 @property (nonatomic, strong) NSString *mainTitle;
+@property (nonatomic, strong) NSString *mainURL;
 @property (nonatomic, strong) NSArray *related_data;
 @property (nonatomic, unsafe_unretained) id<ContentsViewDelegate> touchedDelegate;
 
