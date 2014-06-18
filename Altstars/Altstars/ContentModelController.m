@@ -54,6 +54,7 @@
     }
     
     index--;
+    self.currentIndex = index;
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
 
@@ -68,9 +69,9 @@
     if (index == [self.pageData count]) {
         return nil;
     }
+    self.currentIndex = index;
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
-
 
 
 @end

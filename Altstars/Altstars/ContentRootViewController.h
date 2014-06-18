@@ -11,5 +11,5 @@
 @interface ContentRootViewController : UIViewController <UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
-
+@property (nonatomic, strong) UIPageControl *pageControl;
 @end

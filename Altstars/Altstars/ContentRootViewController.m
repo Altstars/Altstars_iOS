@@ -52,6 +52,15 @@
                        self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
                        self.pageViewController.delegate = self;
                        
+                       NSInteger pageCount = [responseObject[@"contents"] count];
+                       self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 20, 320, 20)];
+                       //pageControl.backgroundColor = [UIColor blackColor];
+                       self.pageControl.numberOfPages = pageCount;
+                       self.pageControl.currentPage = 0;
+                       self.pageControl.layer.zPosition = 10;
+                       [self.pageViewController.view addSubview:self.pageControl];
+                       
+                       
                        ContentDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
                        NSArray *viewControllers = @[startingViewController];
                        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
@@ -73,7 +82,11 @@
                        // エラーの場合はエラーの内容をコンソールに出力する
                        NSLog(@"Error: %@", error);
                    }];
-    
+}
+
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
+{
+    self.pageControl.currentPage = self.modelController.currentIndex;
 }
 
 - (void)viewWillAppear:(BOOL)animated
