@@ -58,6 +58,7 @@
                        self.pageControl.numberOfPages = pageCount;
                        self.pageControl.currentPage = 0;
                        self.pageControl.layer.zPosition = 10;
+                       self.pageControl.transform = CGAffineTransformMakeScale(0.7, 0.7);
                        [self.pageViewController.view addSubview:self.pageControl];
                        
                        
