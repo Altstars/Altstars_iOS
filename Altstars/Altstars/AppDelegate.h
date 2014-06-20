@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/Facebook.h>
+#import "PaulClient.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

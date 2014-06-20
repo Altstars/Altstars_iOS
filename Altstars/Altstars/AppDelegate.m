@@ -21,9 +21,12 @@
    
     [FBLoginView class];
  
-    
+    //For push notification
+    [application registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge|
+                                                      UIRemoteNotificationTypeSound|
+                                                      UIRemoteNotificationTypeAlert)];
+  
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    
     NSString *auth = (NSString*)[ud objectForKey:@"auth"];
     
     NSLog(@"%@", auth);
@@ -43,9 +46,36 @@
     //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:230.0/256 green:13.0/256 blue:123.0/256 alpha:1.0]];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-
+    
     return YES;
 }
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // デバイストークンの両端の「<>」を取り除く
+    NSString *deviceTokenString = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    
+    // デバイストークン中の半角スペースを除去する
+    deviceTokenString = [deviceTokenString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    
+    PaulClient *client = [PaulClient sharedClient];
+    [client setDeviceToken:deviceTokenString
+                   success:^(NSURLSessionDataTask *task, id responseObject) {
+                       NSLog(@"OK");
+                   }
+                   failure:^(NSURLSessionDataTask *task, NSError *error) {
+                       // エラーの場合はエラーの内容をコンソールに出力する
+                       NSLog(@"Error: %@", error);
+                   }];
+
+    
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)err{
+    NSLog(@"Error : Fail Regist to APNS. (%@)", err);
+}
+
 
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url

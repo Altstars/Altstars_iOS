@@ -9,7 +9,7 @@
 #import "PaulClient.h"
 #define API_BASE_URL @"http://altstars.koukilab.com/"
 //#define API_BASE_URL @"http://localhost:8888/"
-
+//#define API_BASE_URL @"http://192.168.1.3:8888"
 
 @implementation PaulClient
 
@@ -82,5 +82,24 @@ failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
          ];
     });
 }
+
+- (void)setDeviceToken:(NSString*)deviceTokenString
+                     success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                     failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
+{
+    __weak PaulClient *weakSelf = self;
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        NSString *path = [NSString stringWithFormat:@"notification/token"];
+        [weakSelf POST:path
+            parameters:@{@"token":deviceTokenString}
+              success:success
+              failure:failure
+         ];
+    });
+}
+
+
 
 @end

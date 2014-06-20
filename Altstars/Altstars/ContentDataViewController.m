@@ -70,12 +70,10 @@
     PaulClient *client = [PaulClient sharedClient];
     [client relatedContentWithId:content_id
                    success:^(NSURLSessionDataTask *task, id responseObject) {
-                       NSLog(@"responseObject: %@", responseObject);
                        self.contentsView.related_data = responseObject;
                        [self.contentsView reloadData];
                    }
                    failure:^(NSURLSessionDataTask *task, NSError *error) {
-                       // エラーの場合はエラーの内容をコンソールに出力する
                        NSLog(@"Error: %@", error);
                    }];
     

@@ -42,8 +42,6 @@
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
-    NSLog(@"%@",user);
-    
     NSString *fbAccessToken = [FBSession activeSession].accessTokenData.accessToken;
     NSLog(@"%@",fbAccessToken);
     

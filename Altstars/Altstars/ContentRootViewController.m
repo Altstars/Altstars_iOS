@@ -82,6 +82,11 @@
                    failure:^(NSURLSessionDataTask *task, NSError *error) {
                        // エラーの場合はエラーの内容をコンソールに出力する
                        NSLog(@"Error: %@", error);
+                       
+                       //FOR DEBUG:ここでエラーが起きてたら認証できていない可能性が高いため、認証情報を削除
+                       NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+                       [ud removeObjectForKey:@"auth"];
+                       
                    }];
 }
 
@@ -109,14 +114,14 @@
 }
 
 /*
-- (ContentModelController *)modelController
-{
-    if(!self.modelController){
-        _modelController = [[ContentModelController alloc] init];
-    }
-    return _modelController;
-}
-*/
+ - (ContentModelController *)modelController
+ {
+ if(!self.modelController){
+ _modelController = [[ContentModelController alloc] init];
+ }
+ return _modelController;
+ }
+ */
 
 - (UIPageViewControllerSpineLocation) pageViewController:(UIPageViewController *)pageViewController spineLocationForInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
@@ -129,15 +134,15 @@
     return UIPageViewControllerSpineLocationMin;
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
 @end

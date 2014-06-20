@@ -23,4 +23,9 @@
 - (void)authorizationWithFacebook:(NSString*)facebook_id
                           success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                           failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+
+
+- (void)setDeviceToken:(NSString*)deviceTokenString
+                     success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+               failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
 @end
