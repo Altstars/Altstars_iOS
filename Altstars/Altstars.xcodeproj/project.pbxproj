@@ -45,6 +45,8 @@
 		1ED22643194850EA0006049D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED22642194850EA0006049D /* LoginViewController.m */; };
 		1ED2264C194883920006049D /* PaulRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2264B194883920006049D /* PaulRequestSerializer.m */; };
 		1ED2264F194883AC0006049D /* PaulClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2264E194883AC0006049D /* PaulClient.m */; };
+		1EF77A09195BC3C900C05E0A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EF77A08195BC3C900C05E0A /* menu@2x.png */; };
+		1EF77A0B195BE1F600C05E0A /* section.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EF77A0A195BE1F600C05E0A /* section.png */; };
 		5C4E86F28AD64426B9E2D23A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 142803E369434BD7BB582C78 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +116,8 @@
 		1ED2264B194883920006049D /* PaulRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaulRequestSerializer.m; sourceTree = "<group>"; };
 		1ED2264D194883AC0006049D /* PaulClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaulClient.h; sourceTree = "<group>"; };
 		1ED2264E194883AC0006049D /* PaulClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaulClient.m; sourceTree = "<group>"; };
+		1EF77A08195BC3C900C05E0A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		1EF77A0A195BE1F600C05E0A /* section.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section.png; sourceTree = "<group>"; };
 		60B699C47BAD4A37BCF24B27 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,6 +218,8 @@
 				1ED22650194883B30006049D /* API */,
 				1E11E2DC19276A5600508731 /* Content */,
 				1E7A17B919244B490097541D /* Images.xcassets */,
+				1EF77A0A195BE1F600C05E0A /* section.png */,
+				1EF77A08195BC3C900C05E0A /* menu@2x.png */,
 				1E7D0DE3194DB8AD004719B9 /* Images */,
 				1E7A17A819244B490097541D /* Supporting Files */,
 			);
@@ -379,6 +385,7 @@
 				1E7A17BA19244B490097541D /* Images.xcassets in Resources */,
 				1E7D0DCE194DAAD6004719B9 /* magame_logo.png in Resources */,
 				1E9D6F2D1931F6A1007055BF /* icon.png in Resources */,
+				1EF77A0B195BE1F600C05E0A /* section.png in Resources */,
 				1E7D0DEB194DBF9C004719B9 /* magame_page_menu.png in Resources */,
 				1E7D0DE7194DBBB3004719B9 /* magame_page_main.png in Resources */,
 				1E7D0DDA194DABAF004719B9 /* LICENSE.txt in Resources */,
@@ -387,6 +394,7 @@
 				1E7D0DD8194DABAF004719B9 /* CHANGELOG.txt in Resources */,
 				1E9D6F2F1931FAEF007055BF /* icon120.png in Resources */,
 				1E7A17AC19244B490097541D /* InfoPlist.strings in Resources */,
+				1EF77A09195BC3C900C05E0A /* menu@2x.png in Resources */,
 				1E11E2C61927497C00508731 /* article_image.png in Resources */,
 				1E7A17B519244B490097541D /* Main.storyboard in Resources */,
 				1E7D0DE9194DBBB3004719B9 /* magame_page_sub.png in Resources */,

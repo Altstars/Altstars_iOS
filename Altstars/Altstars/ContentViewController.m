@@ -30,6 +30,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+    
+    //カラフルなバー表示
+    UIWindow* window = [UIApplication sharedApplication].keyWindow;
+    window = [[UIApplication sharedApplication].windows objectAtIndex:[[window subviews] count]];
+    window.rootViewController = [window rootViewController];
+    
+    UIImageView *section = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"section.png"]];
+    section.frame = CGRectMake(0, 62, 320, 3);
+    [window addSubview:section];
+    section.hidden = NO;
+
     //[self.navigationBar setBackgroundColor:[UIColor orangeColor]];
 
 }
