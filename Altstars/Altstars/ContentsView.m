@@ -27,7 +27,7 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    return 3;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -36,6 +36,9 @@
         return 1;
     }
     else if(section == 1){
+        return 1;
+    }
+    else if(section == 2){
         return [self.related_data count];
     }
     return 0;
@@ -52,6 +55,11 @@
         UILabel *mainTitle = (UILabel*)[cell viewWithTag:2];
         mainTitle.text = self.mainTitle;
 
+        return cell;
+    }
+    else if(indexPath.section == 1) {
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CommentItem" forIndexPath:indexPath];
+        //Do this
         return cell;
     }
     
@@ -97,6 +105,9 @@
     else if(indexPath.section == 1){
         return CGSizeMake(320.0, 100.0);
     }
+    else if(indexPath.section == 2){
+        return CGSizeMake(320.0, 100.0);
+    }
     return CGSizeMake(0.0, 0.0);
 }
 
@@ -108,6 +119,9 @@
         [self.touchedDelegate contentsViewCellTouched:url];
     }
     else if(indexPath.section == 1){
+        //Do this
+    }
+    else if(indexPath.section == 2){
         id content = self.related_data[indexPath.row];
         NSString *url = content[@"url"];
         NSLog(@"touched:%@", url);
