@@ -77,8 +77,8 @@
                    failure:^(NSURLSessionDataTask *task, NSError *error) {
                        NSLog(@"Error: %@", error);
                    }];
+
     
- 
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -93,10 +93,16 @@
     
     self.contentsView.mainURL = self.dataObject[@"url"];
     
-    
-    self.contentsView.frame = CGRectMake(0, 0,
-                            self.parentViewController.view.bounds.size.width,
-                            self.parentViewController.view.bounds.size.height-60);
+
+
+    //FIXME: もっと良い設計あるだろうなぁ・・わからん。
+    AppDelegate* delegate = [[UIApplication sharedApplication] delegate];
+    if(CGRectIsEmpty(delegate.contentsViewRect)){
+        delegate.contentsViewRect = CGRectMake(0, 0,
+                              self.parentViewController.view.bounds.size.width,
+                              self.parentViewController.view.bounds.size.height-60);
+    }
+    self.contentsView.frame = delegate.contentsViewRect;
 }
 
 - (void)didReceiveMemoryWarning

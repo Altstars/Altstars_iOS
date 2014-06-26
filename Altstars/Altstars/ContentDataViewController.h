@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AppDelegate.h"
 #import "ContentsView.h"
 #import "WebViewController.h"
 
@@ -16,5 +17,7 @@
 @property (strong, nonatomic) id dataObject;
 
 @property (weak, nonatomic) IBOutlet ContentsView *contentsView;
+
+@property CGRect rect;
 
 @end

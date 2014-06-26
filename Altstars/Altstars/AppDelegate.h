@@ -14,4 +14,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+
+@property CGRect contentsViewRect;
+
 @end
