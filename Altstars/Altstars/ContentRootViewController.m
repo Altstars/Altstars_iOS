@@ -63,6 +63,7 @@
                        
                        
                        ContentDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
+                       
                        NSArray *viewControllers = @[startingViewController];
                        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
                        

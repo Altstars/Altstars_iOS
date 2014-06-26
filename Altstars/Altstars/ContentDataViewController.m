@@ -28,6 +28,7 @@
     return self;
 }
 
+
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
@@ -91,6 +92,11 @@
     self.contentsView.mainImage = [[UIImage alloc] initWithData:data];
     
     self.contentsView.mainURL = self.dataObject[@"url"];
+    
+    
+    self.contentsView.frame = CGRectMake(0, 0,
+                            self.parentViewController.view.bounds.size.width,
+                            self.parentViewController.view.bounds.size.height-60);
 }
 
 - (void)didReceiveMemoryWarning

@@ -18,7 +18,7 @@
         [self setDataSource:self];
         [self setDelegate:self];
         self.related_data = [[NSArray alloc] init];
-        
+
         self.scrollEnabled = YES;
     }
     return self;
