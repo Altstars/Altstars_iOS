@@ -33,7 +33,7 @@
     
     //カラフルなバー表示
     UIWindow* window = [UIApplication sharedApplication].keyWindow;
-    window = [[UIApplication sharedApplication].windows objectAtIndex:[[window subviews] count]];
+    window = [[UIApplication sharedApplication].windows objectAtIndex:0];
     window.rootViewController = [window rootViewController];
     
     UIImageView *section = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"section.png"]];

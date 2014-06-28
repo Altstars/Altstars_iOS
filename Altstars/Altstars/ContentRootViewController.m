@@ -62,15 +62,21 @@
                        self.pageViewController.delegate = self;
                        
                        NSInteger pageCount = [responseObject[@"contents"] count];
-                       self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 20, 320, 20)];
+                       self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 45, 320, 20)];
                        //pageControl.backgroundColor = [UIColor blackColor];
                        self.pageControl.numberOfPages = pageCount;
                        self.pageControl.currentPage = 0;
                        self.pageControl.layer.zPosition = 10;
                        self.pageControl.transform = CGAffineTransformMakeScale(0.7, 0.7);
+                       self.pageControl.pageIndicatorTintColor = [UIColor grayColor];
                        [self setColorfulPageControlColor];
                        
-                       [self.pageViewController.view addSubview:self.pageControl];
+                       UIWindow* window = [UIApplication sharedApplication].keyWindow;
+                       window = [[UIApplication sharedApplication].windows objectAtIndex:0];
+                       window.rootViewController = [window rootViewController];
+                       
+                       [window addSubview:self.pageControl];
+                       self.pageControl.hidden = NO;
                        
                        
                        ContentDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
