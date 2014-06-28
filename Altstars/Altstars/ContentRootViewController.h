@@ -12,4 +12,5 @@
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (nonatomic, strong) UIPageControl *pageControl;
+@property (nonatomic, strong) NSArray *pageControlColors;
 @end

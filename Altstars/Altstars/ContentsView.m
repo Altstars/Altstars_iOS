@@ -60,6 +60,19 @@
     else if(indexPath.section == 1) {
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CommentItem" forIndexPath:indexPath];
         //Do this
+        UIScrollView *scrollView = (UIScrollView*)[cell viewWithTag:11];
+        scrollView.contentSize = CGSizeMake(320*5, 100);
+        scrollView.pagingEnabled = YES;
+        
+        for (int i =0; i < 5; i++){
+            UITextView *textView = [[UITextView alloc] init];
+            textView.text = @"コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント";
+            textView.frame = CGRectMake(320*i, 0, 320, 100);
+            textView.editable = NO;
+            [scrollView addSubview:textView];
+            
+        }
+        
         return cell;
     }
     

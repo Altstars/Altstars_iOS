@@ -40,6 +40,15 @@
     
     self.modelController = [[ContentModelController alloc] init];
 
+    self.pageControlColors  = @[
+                          [UIColor greenColor],
+                          [UIColor yellowColor],
+                          [UIColor orangeColor],
+                          [UIColor redColor],
+                          [UIColor purpleColor],
+                          [UIColor blueColor]
+                        ];
+    
     
     PaulClient *client = [PaulClient sharedClient];
     [client magazineWithId:@"init"
@@ -59,6 +68,8 @@
                        self.pageControl.currentPage = 0;
                        self.pageControl.layer.zPosition = 10;
                        self.pageControl.transform = CGAffineTransformMakeScale(0.7, 0.7);
+                       [self setColorfulPageControlColor];
+                       
                        [self.pageViewController.view addSubview:self.pageControl];
                        
                        
@@ -91,9 +102,15 @@
                    }];
 }
 
+- (void)setColorfulPageControlColor{
+    self.pageControl.currentPageIndicatorTintColor =
+      self.pageControlColors[self.pageControl.currentPage % [self.pageControlColors count]];
+}
+
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
 {
     self.pageControl.currentPage = self.modelController.currentIndex;
+    [self setColorfulPageControlColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated
