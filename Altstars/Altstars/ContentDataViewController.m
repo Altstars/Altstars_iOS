@@ -96,6 +96,7 @@
 
 
     //FIXME: もっと良い設計あるだろうなぁ・・わからん。
+    //画面の大きさとUICollectionViewの大きさを揃える処理
     AppDelegate* delegate = [[UIApplication sharedApplication] delegate];
     if(CGRectIsEmpty(delegate.contentsViewRect)){
         delegate.contentsViewRect = CGRectMake(0, 0,
