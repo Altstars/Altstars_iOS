@@ -13,6 +13,7 @@
 		1E11E2D519275EF900508731 /* ContentModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2D419275EF900508731 /* ContentModelController.m */; };
 		1E11E2DB19276A3400508731 /* ContentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2DA19276A3400508731 /* ContentsView.m */; };
 		1E11E2E21928EF3600508731 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2E11928EF3600508731 /* ContentViewController.m */; };
+		1E1F8ED919658F89006C08D6 /* CommentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1F8ED819658F89006C08D6 /* CommentTableViewController.m */; };
 		1E7A17A219244B490097541D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A119244B490097541D /* Foundation.framework */; };
 		1E7A17A419244B490097541D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A319244B490097541D /* CoreGraphics.framework */; };
 		1E7A17A619244B490097541D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7A17A519244B490097541D /* UIKit.framework */; };
@@ -73,6 +74,8 @@
 		1E11E2DA19276A3400508731 /* ContentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentsView.m; sourceTree = "<group>"; };
 		1E11E2E01928EF3600508731 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		1E11E2E11928EF3600508731 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		1E1F8ED719658F89006C08D6 /* CommentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewController.h; sourceTree = "<group>"; };
+		1E1F8ED819658F89006C08D6 /* CommentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewController.m; sourceTree = "<group>"; };
 		1E7A179E19244B490097541D /* Altstars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Altstars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7A17A119244B490097541D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E7A17A319244B490097541D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,14 +165,24 @@
 				1E11E2C819274AC700508731 /* ContentDataViewController.m */,
 				1E11E2D919276A3400508731 /* ContentsView.h */,
 				1E11E2DA19276A3400508731 /* ContentsView.m */,
-				1E7D0DC6194D7A7E004719B9 /* MainContentViewCell.h */,
-				1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */,
-				1E7D0DC3194D7A6B004719B9 /* RelatedContentsViewCell.h */,
-				1E7D0DC4194D7A6B004719B9 /* RelatedContentsViewCell.m */,
+				1E1F8EDA19658FE8006C08D6 /* Cells */,
+				1E1F8ED719658F89006C08D6 /* CommentTableViewController.h */,
+				1E1F8ED819658F89006C08D6 /* CommentTableViewController.m */,
 				1E9D6F291931EBDC007055BF /* WebViewController.h */,
 				1E9D6F2A1931EBDC007055BF /* WebViewController.m */,
 			);
 			name = Content;
+			sourceTree = "<group>";
+		};
+		1E1F8EDA19658FE8006C08D6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1E7D0DC6194D7A7E004719B9 /* MainContentViewCell.h */,
+				1E7D0DC7194D7A7F004719B9 /* MainContentViewCell.m */,
+				1E7D0DC3194D7A6B004719B9 /* RelatedContentsViewCell.h */,
+				1E7D0DC4194D7A6B004719B9 /* RelatedContentsViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		1E7A179519244B490097541D = {
@@ -458,6 +471,7 @@
 				1E11E2C919274AC700508731 /* ContentDataViewController.m in Sources */,
 				1ED2264C194883920006049D /* PaulRequestSerializer.m in Sources */,
 				1ED22643194850EA0006049D /* LoginViewController.m in Sources */,
+				1E1F8ED919658F89006C08D6 /* CommentTableViewController.m in Sources */,
 				1E11E2D519275EF900508731 /* ContentModelController.m in Sources */,
 				1E11E2DB19276A3400508731 /* ContentsView.m in Sources */,
 				1E7D0DC5194D7A6B004719B9 /* RelatedContentsViewCell.m in Sources */,

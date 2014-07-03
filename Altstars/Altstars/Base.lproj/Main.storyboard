@@ -82,22 +82,22 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainItem" id="icl-HZ-jxA" customClass="MainContentViewCell">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article_image.png" id="TLV-mo-dhW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magame_page_main.png" id="eFK-oo-6dX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〜Title〜ああああああああああああああああああああああああ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yuc-64-6uQ">
-                                                            <rect key="frame" x="6" y="280" width="308" height="58"/>
+                                                            <rect key="frame" x="6" y="185" width="308" height="58"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -108,25 +108,25 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <size key="customSize" width="320" height="348"/>
+                                                <size key="customSize" width="320" height="264"/>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultRelatedItem" id="ka3-Qa-IBW" customClass="RelatedContentsViewCell">
-                                                <rect key="frame" x="0.0" y="348" width="320" height="100"/>
+                                                <rect key="frame" x="80" y="264" width="160" height="120"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Related_image" image="article_image.png" id="35Y-9l-CXq">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magame_page_sub.png" id="Glz-p3-qaJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あああああああああああああああ" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rhf-Yi-xQR">
-                                                            <rect key="frame" x="7" y="54" width="306" height="40"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あああああああああああああああaああああああああああああ" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rhf-Yi-xQR">
+                                                            <rect key="frame" x="3" y="61" width="154" height="53"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -137,7 +137,7 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <size key="customSize" width="320" height="100"/>
+                                                <size key="customSize" width="160" height="120"/>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
@@ -172,6 +172,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rM-sF-WXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="815" y="90"/>
+        </scene>
+        <!--Comment Table View Controller-->
+        <scene sceneID="x7J-mU-mfv">
+            <objects>
+                <viewController id="ZdX-Ng-vLb" customClass="CommentTableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Wv-ih-aoZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pT-Vk-Rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="90"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="4V6-K2-vAt">
@@ -219,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyH-iG-miX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711" y="90"/>
+            <point key="canvasLocation" x="2115" y="90"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="yFt-0g-zz9">

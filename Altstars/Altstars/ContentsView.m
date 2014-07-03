@@ -91,10 +91,10 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.section == 0){
-        return CGSizeMake(320.0, 348.0);
+        return CGSizeMake(320.0, 264.0);
     }
     else if(indexPath.section == 1){
-        return CGSizeMake(320.0, 100.0);
+        return CGSizeMake(320.0/2, 120.0);
     }
     return CGSizeMake(0.0, 0.0);
 }
