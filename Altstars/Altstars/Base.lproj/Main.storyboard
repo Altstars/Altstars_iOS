@@ -7,7 +7,6 @@
         <!--Content View Controller-->
         <scene sceneID="gsB-Ay-WOU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ScH-yb-3RZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="uDm-Lf-qHb" customClass="ContentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VM2-eP-9PR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -41,6 +40,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScH-yb-3RZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="394" y="26"/>
         </scene>
@@ -110,24 +110,8 @@
                                                 </view>
                                                 <size key="customSize" width="320" height="348"/>
                                             </collectionViewCell>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommentItem" id="5jF-IY-bN1">
-                                                <rect key="frame" x="0.0" y="348" width="320" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="11" contentMode="scaleToFill" id="V7k-zG-a4c">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        </scrollView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <size key="customSize" width="320" height="100"/>
-                                            </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultRelatedItem" id="ka3-Qa-IBW" customClass="RelatedContentsViewCell">
-                                                <rect key="frame" x="0.0" y="448" width="320" height="100"/>
+                                                <rect key="frame" x="0.0" y="348" width="320" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>

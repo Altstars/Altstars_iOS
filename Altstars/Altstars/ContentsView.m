@@ -27,7 +27,7 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 3;
+    return 2;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -36,9 +36,6 @@
         return 1;
     }
     else if(section == 1){
-        return 1;
-    }
-    else if(section == 2){
         return [self.related_data count];
     }
     return 0;
@@ -57,25 +54,6 @@
 
         return cell;
     }
-    else if(indexPath.section == 1) {
-        cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CommentItem" forIndexPath:indexPath];
-        //Do this
-        UIScrollView *scrollView = (UIScrollView*)[cell viewWithTag:11];
-        scrollView.contentSize = CGSizeMake(320*5, 100);
-        scrollView.pagingEnabled = YES;
-        
-        for (int i =0; i < 5; i++){
-            UITextView *textView = [[UITextView alloc] init];
-            textView.text = @"コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント";
-            textView.frame = CGRectMake(320*i, 0, 320, 100);
-            textView.editable = NO;
-            [scrollView addSubview:textView];
-            
-        }
-        
-        return cell;
-    }
-    
     
     id content = self.related_data[indexPath.row];
     
@@ -118,9 +96,6 @@
     else if(indexPath.section == 1){
         return CGSizeMake(320.0, 100.0);
     }
-    else if(indexPath.section == 2){
-        return CGSizeMake(320.0, 100.0);
-    }
     return CGSizeMake(0.0, 0.0);
 }
 
@@ -132,9 +107,6 @@
         [self.touchedDelegate contentsViewCellTouched:url];
     }
     else if(indexPath.section == 1){
-        //Do this
-    }
-    else if(indexPath.section == 2){
         id content = self.related_data[indexPath.row];
         NSString *url = content[@"url"];
         NSLog(@"touched:%@", url);
