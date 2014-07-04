@@ -94,7 +94,7 @@
         return CGSizeMake(320.0, 264.0);
     }
     else if(indexPath.section == 1){
-        return CGSizeMake(320.0/2, 120.0);
+        return CGSizeMake(320.0, 120.0);
     }
     return CGSizeMake(0.0, 0.0);
 }
