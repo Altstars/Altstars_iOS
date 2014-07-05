@@ -108,17 +108,19 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *text;
+    CGSize  maxSize = CGSizeMake(200, CGFLOAT_MAX);
     int margin = 0;
     if(indexPath.section == 0){
-        margin = 165;
+        margin = 195;
         text = @"自然言語がなんとかこんとかでなんとかこんとかだからなんとかこんとかなことがなんとかこんとかしてなんとかこんとかなんとかこんとかがなんとかこんとかするようになんとかこんとかした";
+        maxSize = CGSizeMake(300, CGFLOAT_MAX);
     }
     else if(indexPath.section == 1){
-        margin = 40;
+        margin = 45;
         text = @"That is a comment. comment.comment.comment.comment.comment.comment.comment.comment.comment.comment.";
+        maxSize = CGSizeMake(310, CGFLOAT_MAX);
     }
     
-    CGSize  maxSize = CGSizeMake(200, CGFLOAT_MAX);
     NSDictionary *attr = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0]};
     CGSize modifiedSize = [text boundingRectWithSize:maxSize
                                              options:NSStringDrawingUsesLineFragmentOrigin
