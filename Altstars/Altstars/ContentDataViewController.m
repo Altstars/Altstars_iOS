@@ -43,10 +43,22 @@
     
 }
 
-- (void)contentsViewCellTouched:(NSString *)url{
-    [self pushWebViewControllerWithUrl:url];
+- (void)contentsViewCellTouched:(id)dataObject
+{
+    [self pushCommentViewControllerWithDataObject:dataObject];
 }
 
+- (void)pushCommentViewControllerWithDataObject:(id)dataObject
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    CommentTableViewController *commentTableViewController = [storyboard instantiateViewControllerWithIdentifier:@"CommentTableViewController"];
+    commentTableViewController.dataObject = dataObject;
+    
+    
+    UINavigationController *navigationController = self.parentViewController.parentViewController.parentViewController.navigationController;
+    [navigationController pushViewController:commentTableViewController animated:YES];
+    
+}
     
 
 - (void)pushWebViewControllerWithUrl:(NSString*)url
@@ -85,6 +97,7 @@
 {
     [super viewWillAppear:animated];
     
+    self.contentsView.dataObject = self.dataObject;
     self.contentsView.mainTitle = self.dataObject[@"title"];
     
     NSURL *url = [NSURL URLWithString:self.dataObject[@"image"]];

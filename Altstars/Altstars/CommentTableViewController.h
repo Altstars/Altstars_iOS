@@ -10,4 +10,7 @@
 
 @interface CommentTableViewController : UITableViewController
 
+
+@property (nonatomic, strong) id dataObject;
+
 @end

@@ -18,6 +18,7 @@
 
 @interface ContentsView : UICollectionView <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
+@property (strong, nonatomic) id dataObject;
 @property (nonatomic, strong) UIImage *mainImage;
 @property (nonatomic, strong) NSString *mainTitle;
 @property (nonatomic, strong) NSString *mainURL;

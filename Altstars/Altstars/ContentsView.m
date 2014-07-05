@@ -49,6 +49,7 @@
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainItem" forIndexPath:indexPath];
         UIImageView *mainView = (UIImageView*)[cell viewWithTag:1];
         mainView.image = self.mainImage;
+        
         UILabel *mainTitle = (UILabel*)[cell viewWithTag:2];
         mainTitle.text = self.mainTitle;
 
@@ -104,14 +105,14 @@
     
     if (indexPath.section == 0){
         NSString *url = self.mainURL;
-        [self.touchedDelegate contentsViewCellTouched:url];
+        [self.touchedDelegate contentsViewCellTouched:self.dataObject];
     }
     else if(indexPath.section == 1){
         id content = self.related_data[indexPath.row];
         NSString *url = content[@"url"];
         NSLog(@"touched:%@", url);
     
-        [self.touchedDelegate contentsViewCellTouched:url];
+        [self.touchedDelegate contentsViewCellTouched:self.dataObject];
     }
 
     /*

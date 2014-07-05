@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "ContentsView.h"
 #import "WebViewController.h"
+#import "CommentTableViewController.h"
 
 @interface ContentDataViewController : UIViewController <ContentsViewDelegate>
 
