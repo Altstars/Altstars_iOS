@@ -38,9 +38,6 @@
             break;
     }
     
-    NSString *url = self.dataObject[@"url"];
-    [self pushWebViewControllerWithUrl:url];
-    
 }
 
 - (void)contentsViewCellTouched:(id)dataObject
@@ -61,16 +58,6 @@
 }
     
 
-- (void)pushWebViewControllerWithUrl:(NSString*)url
-{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    WebViewController *webViewController = [storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
-    webViewController.url = url;
-    
-    UINavigationController *navigationController = self.parentViewController.parentViewController.parentViewController.navigationController;
-    [navigationController pushViewController:webViewController animated:YES];
-
-}
 
 - (void)viewDidLoad
 {

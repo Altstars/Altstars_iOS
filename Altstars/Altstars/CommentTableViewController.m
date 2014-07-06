@@ -133,6 +133,24 @@
     
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.section == 0){
+        [self pushWebViewControllerWithUrl:self.dataObject[@"url"]];
+    }
+}
+
+- (void)pushWebViewControllerWithUrl:(NSString*)url
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    WebViewController *webViewController = [storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
+    webViewController.url = url;
+    
+    UINavigationController *navigationController = self.navigationController;
+    [navigationController pushViewController:webViewController animated:YES];
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
