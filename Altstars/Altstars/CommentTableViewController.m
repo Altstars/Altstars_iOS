@@ -91,7 +91,7 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Comment" forIndexPath:indexPath];
         
         UILabel *text = (UILabel*)[cell viewWithTag:10];
-        text.text = @"That is a comment. comment.comment.comment.comment.comment.comment.comment.comment.comment.comment.";
+        text.text = @"これはコメントだからコメントをコメントと考えうるかについてのコメントはコメントを控える事でこれをコメントとしたい。";
         [text sizeToFit];
         
         UIImageView *thumbnail = (UIImageView*)[cell viewWithTag:11];
@@ -117,11 +117,11 @@
     }
     else if(indexPath.section == 1){
         margin = 45;
-        text = @"That is a comment. comment.comment.comment.comment.comment.comment.comment.comment.comment.comment.";
+        text = @"これはコメントだからコメントをコメントと考えうるかについてのコメントはコメントを控える事でこれをコメントとしたい。";
         maxSize = CGSizeMake(310, CGFLOAT_MAX);
     }
     
-    NSDictionary *attr = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0]};
+    NSDictionary *attr = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:12.0]};
     CGSize modifiedSize = [text boundingRectWithSize:maxSize
                                              options:NSStringDrawingUsesLineFragmentOrigin
                                           attributes:attr
