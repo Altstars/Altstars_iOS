@@ -112,7 +112,7 @@
         NSString *url = content[@"url"];
         NSLog(@"touched:%@", url);
     
-        [self.touchedDelegate contentsViewCellTouched:self.dataObject];
+        [self.touchedDelegate contentsViewCellTouched:content];
     }
 
     /*
