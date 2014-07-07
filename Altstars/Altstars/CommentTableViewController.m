@@ -73,6 +73,9 @@
         NSData *data = [NSData dataWithContentsOfURL:url];
         mainImage.image = [[UIImage alloc] initWithData:data];
         
+        UILabel *titleLabel = (UILabel*)[cell viewWithTag:2];
+        titleLabel.text = self.dataObject[@"title"];
+        
         UILabel *text = (UILabel*)[cell viewWithTag:3];
         text.text = @"自然言語がなんとかこんとかでなんとかこんとかだからなんとかこんとかなことがなんとかこんとかしてなんとかこんとかなんとかこんとかがなんとかこんとかするようになんとかこんとかした";
         [text sizeToFit];
@@ -129,8 +132,6 @@
                            ].size;
     
     return modifiedSize.height + margin;
-    
-    
 }
 
 
