@@ -123,11 +123,13 @@
 {
     [super viewWillAppear:animated];
     //[self.navigationController setNavigationBarHidden:YES animated:YES];
+    self.pageControl.hidden = NO;
 }
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    self.pageControl.hidden = YES;
 }
 
 
