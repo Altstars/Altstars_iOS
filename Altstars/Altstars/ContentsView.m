@@ -104,7 +104,6 @@
 {
     
     if (indexPath.section == 0){
-        NSString *url = self.mainURL;
         [self.touchedDelegate contentsViewCellTouched:self.dataObject];
     }
     else if(indexPath.section == 1){
