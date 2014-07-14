@@ -114,7 +114,7 @@
     
         [self.touchedDelegate contentsViewCellTouched:content];
     }
-
+   
     /*
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     WebViewController *webViewController = [storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
