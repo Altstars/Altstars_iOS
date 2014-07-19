@@ -97,6 +97,7 @@
 
     //FIXME: もっと良い設計あるだろうなぁ・・わからん。
     //画面の大きさとUICollectionViewの大きさを揃える処理
+    
     AppDelegate* delegate = [[UIApplication sharedApplication] delegate];
     if(CGRectIsEmpty(delegate.contentsViewRect)){
         delegate.contentsViewRect = CGRectMake(0, 0,
@@ -104,6 +105,7 @@
                               self.parentViewController.view.bounds.size.height-60);
     }
     self.contentsView.frame = delegate.contentsViewRect;
+    
 }
 
 - (void)didReceiveMemoryWarning
