@@ -101,9 +101,17 @@
                        // エラーの場合はエラーの内容をコンソールに出力する
                        NSLog(@"Error: %@", error);
                        
-                       //FOR DEBUG:ここでエラーが起きてたら認証できていない可能性が高いため、認証情報を削除
-                       NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-                       [ud removeObjectForKey:@"auth"];
+                       UIAlertView *alert = [[UIAlertView alloc]
+                                             initWithTitle:@"Network Error"
+                                             message:@"エラーです。ネットワークを確認してください。"
+                                             delegate:nil
+                                             cancelButtonTitle:nil
+                                             otherButtonTitles:@"OK", nil
+                                             ];
+                       
+                       [alert show];
+
+                       
                        
                    }];
 }
