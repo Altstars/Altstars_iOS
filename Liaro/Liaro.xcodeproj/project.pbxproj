@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EB7E60519A74A9500A0418D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7E60419A74A9500A0418D /* AppDelegate.swift */; };
+		1EB7E60819A74A9500A0418D /* Liaro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7E60619A74A9500A0418D /* Liaro.xcdatamodeld */; };
+		1EB7E60A19A74A9500A0418D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7E60919A74A9500A0418D /* ViewController.swift */; };
+		1EB7E60D19A74A9500A0418D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB7E60B19A74A9500A0418D /* Main.storyboard */; };
+		1EB7E60F19A74A9500A0418D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB7E60E19A74A9500A0418D /* Images.xcassets */; };
+		1EB7E61B19A74A9500A0418D /* LiaroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7E61A19A74A9500A0418D /* LiaroTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EB7E61519A74A9500A0418D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EB7E5F719A74A9500A0418D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EB7E5FE19A74A9500A0418D;
+			remoteInfo = Liaro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EB7E5FF19A74A9500A0418D /* Liaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB7E60319A74A9500A0418D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB7E60419A74A9500A0418D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EB7E60719A74A9500A0418D /* Liaro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Liaro.xcdatamodel; sourceTree = "<group>"; };
+		1EB7E60919A74A9500A0418D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EB7E60C19A74A9500A0418D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EB7E60E19A74A9500A0418D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1EB7E61419A74A9500A0418D /* LiaroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiaroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB7E61919A74A9500A0418D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB7E61A19A74A9500A0418D /* LiaroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiaroTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EB7E5FC19A74A9500A0418D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB7E61119A74A9500A0418D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EB7E5F619A74A9500A0418D = {
+			isa = PBXGroup;
+			children = (
+				1EB7E60119A74A9500A0418D /* Liaro */,
+				1EB7E61719A74A9500A0418D /* LiaroTests */,
+				1EB7E60019A74A9500A0418D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EB7E60019A74A9500A0418D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EB7E5FF19A74A9500A0418D /* Liaro.app */,
+				1EB7E61419A74A9500A0418D /* LiaroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EB7E60119A74A9500A0418D /* Liaro */ = {
+			isa = PBXGroup;
+			children = (
+				1EB7E60419A74A9500A0418D /* AppDelegate.swift */,
+				1EB7E60919A74A9500A0418D /* ViewController.swift */,
+				1EB7E60B19A74A9500A0418D /* Main.storyboard */,
+				1EB7E60E19A74A9500A0418D /* Images.xcassets */,
+				1EB7E60619A74A9500A0418D /* Liaro.xcdatamodeld */,
+				1EB7E60219A74A9500A0418D /* Supporting Files */,
+			);
+			path = Liaro;
+			sourceTree = "<group>";
+		};
+		1EB7E60219A74A9500A0418D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EB7E60319A74A9500A0418D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1EB7E61719A74A9500A0418D /* LiaroTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EB7E61A19A74A9500A0418D /* LiaroTests.swift */,
+				1EB7E61819A74A9500A0418D /* Supporting Files */,
+			);
+			path = LiaroTests;
+			sourceTree = "<group>";
+		};
+		1EB7E61819A74A9500A0418D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EB7E61919A74A9500A0418D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EB7E5FE19A74A9500A0418D /* Liaro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EB7E61E19A74A9500A0418D /* Build configuration list for PBXNativeTarget "Liaro" */;
+			buildPhases = (
+				1EB7E5FB19A74A9500A0418D /* Sources */,
+				1EB7E5FC19A74A9500A0418D /* Frameworks */,
+				1EB7E5FD19A74A9500A0418D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Liaro;
+			productName = Liaro;
+			productReference = 1EB7E5FF19A74A9500A0418D /* Liaro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EB7E61319A74A9500A0418D /* LiaroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EB7E62119A74A9500A0418D /* Build configuration list for PBXNativeTarget "LiaroTests" */;
+			buildPhases = (
+				1EB7E61019A74A9500A0418D /* Sources */,
+				1EB7E61119A74A9500A0418D /* Frameworks */,
+				1EB7E61219A74A9500A0418D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EB7E61619A74A9500A0418D /* PBXTargetDependency */,
+			);
+			name = LiaroTests;
+			productName = LiaroTests;
+			productReference = 1EB7E61419A74A9500A0418D /* LiaroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EB7E5F719A74A9500A0418D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Kouki;
+				TargetAttributes = {
+					1EB7E5FE19A74A9500A0418D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					1EB7E61319A74A9500A0418D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 1EB7E5FE19A74A9500A0418D;
+					};
+				};
+			};
+			buildConfigurationList = 1EB7E5FA19A74A9500A0418D /* Build configuration list for PBXProject "Liaro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EB7E5F619A74A9500A0418D;
+			productRefGroup = 1EB7E60019A74A9500A0418D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EB7E5FE19A74A9500A0418D /* Liaro */,
+				1EB7E61319A74A9500A0418D /* LiaroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EB7E5FD19A74A9500A0418D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB7E60D19A74A9500A0418D /* Main.storyboard in Resources */,
+				1EB7E60F19A74A9500A0418D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB7E61219A74A9500A0418D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EB7E5FB19A74A9500A0418D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB7E60A19A74A9500A0418D /* ViewController.swift in Sources */,
+				1EB7E60519A74A9500A0418D /* AppDelegate.swift in Sources */,
+				1EB7E60819A74A9500A0418D /* Liaro.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB7E61019A74A9500A0418D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB7E61B19A74A9500A0418D /* LiaroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EB7E61619A74A9500A0418D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EB7E5FE19A74A9500A0418D /* Liaro */;
+			targetProxy = 1EB7E61519A74A9500A0418D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EB7E60B19A74A9500A0418D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EB7E60C19A74A9500A0418D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EB7E61C19A74A9500A0418D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EB7E61D19A74A9500A0418D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EB7E61F19A74A9500A0418D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Liaro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EB7E62019A74A9500A0418D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Liaro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1EB7E62219A74A9500A0418D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LiaroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Liaro.app/Liaro";
+			};
+			name = Debug;
+		};
+		1EB7E62319A74A9500A0418D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LiaroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Liaro.app/Liaro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EB7E5FA19A74A9500A0418D /* Build configuration list for PBXProject "Liaro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB7E61C19A74A9500A0418D /* Debug */,
+				1EB7E61D19A74A9500A0418D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EB7E61E19A74A9500A0418D /* Build configuration list for PBXNativeTarget "Liaro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB7E61F19A74A9500A0418D /* Debug */,
+				1EB7E62019A74A9500A0418D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EB7E62119A74A9500A0418D /* Build configuration list for PBXNativeTarget "LiaroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB7E62219A74A9500A0418D /* Debug */,
+				1EB7E62319A74A9500A0418D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1EB7E60619A74A9500A0418D /* Liaro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1EB7E60719A74A9500A0418D /* Liaro.xcdatamodel */,
+			);
+			currentVersion = 1EB7E60719A74A9500A0418D /* Liaro.xcdatamodel */;
+			path = Liaro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1EB7E5F719A74A9500A0418D /* Project object */;
+}
